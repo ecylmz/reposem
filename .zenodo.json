@@ -1,0 +1,15 @@
+{
+  "title": "Replication package: When Projects Declare What Blame Should Ignore: Effects on Line-Based Ownership Measures",
+  "upload_type": "dataset",
+  "description": "Replication package for a census of 435 GitHub repositories with at least 5,000 stars that keep a .git-blame-ignore-revs file. It contains the sampling frame, the measurement and analysis scripts, the per-repository measurement records with hashed developer identities, and the script that regenerates every number, table, and figure of the article.",
+  "creators": [
+    {
+      "name": "Yılmaz, Emre Can",
+      "affiliation": "Samsun Vocational School, Ondokuz Mayıs University",
+      "orcid": "0000-0003-4365-9131"
+    }
+  ],
+  "license": "cc-by-4.0",
+  "keywords": ["git blame", "code ownership", "mining software repositories", "measurement validity", ".git-blame-ignore-revs"],
+  "communities": [{"identifier": "empirical-software-engineering"}]
+}

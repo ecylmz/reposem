@@ -1,0 +1,199 @@
+<title>Declared Commit Labels</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:wght@500&display=swap">
+<style>
+/* Layout: a single reading column; each commit is a row with its subject in mono and nine label chips below. */
+:root {
+  --bg: #f6f7f5;
+  --surface: #ffffff;
+  --fg: #1d2421;
+  --muted: #5d6762;
+  --line: #d9dfdb;
+  --accent: #2f6b55;
+  --accent-soft: #e2efe9;
+  --warn: #8a5a00;
+  --font-display: "IBM Plex Serif", Georgia, serif;
+  --font-body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #141917; --surface: #1c2320; --fg: #e6ece9; --muted: #9aa6a0; --line: #2f3a35;
+    --accent: #7cc4a6; --accent-soft: #23362e; --warn: #e3b55c; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #141917; --surface: #1c2320; --fg: #e6ece9; --muted: #9aa6a0; --line: #2f3a35;
+  --accent: #7cc4a6; --accent-soft: #23362e; --warn: #e3b55c; color-scheme: dark;
+}
+body { background: var(--bg); color: var(--fg); font-family: var(--font-body); font-size: 15px; line-height: 1.5; }
+.wrap { max-width: 860px; margin: 0 auto; padding-inline: 16px; padding-block: 28px 64px; display: grid; gap: 22px; }
+h1 { font-family: var(--font-display); font-weight: 500; font-size: 1.7rem; line-height: 1.2; margin: 0; text-wrap: balance; }
+p { margin: 0; max-width: 68ch; }
+.lede { color: var(--muted); }
+details.defs { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 12px 16px; }
+details.defs summary { cursor: pointer; font-weight: 600; }
+.defs dl { display: grid; grid-template-columns: max-content 1fr; gap: 6px 16px; margin: 12px 0 0; }
+.defs dt { font-weight: 600; }
+.defs dd { margin: 0; color: var(--muted); min-width: 0; }
+.bar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 2; background: var(--bg); padding-block: 10px; border-bottom: 1px solid var(--line); display: flex; flex-wrap: wrap; gap: 10px 18px; align-items: center; }
+.progress { flex: 1 1 200px; height: 6px; background: var(--line); border-radius: 3px; overflow: hidden; }
+.progress > span { display: block; height: 100%; width: 0; background: var(--accent); transition: width .2s; }
+.count { font-variant-numeric: tabular-nums; font-family: var(--font-mono); font-size: .9rem; }
+.status { color: var(--muted); font-size: .85rem; }
+.status.warn { color: var(--warn); }
+ol.items { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+li.item { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 12px 14px; display: grid; gap: 8px; min-width: 0; }
+li.item.done { border-color: var(--accent); }
+.head { display: flex; gap: 10px; align-items: baseline; min-width: 0; }
+.num { font-family: var(--font-mono); color: var(--muted); font-size: .8rem; font-variant-numeric: tabular-nums; flex: none; }
+.subject { font-family: var(--font-mono); font-size: .92rem; overflow-wrap: anywhere; min-width: 0; }
+.repo { color: var(--muted); font-size: .8rem; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chips label { position: relative; }
+.chips input { position: absolute; opacity: 0; inset: 0; }
+.chips span { display: inline-block; border: 1px solid var(--line); border-radius: 999px; padding: 3px 10px; font-size: .82rem; cursor: pointer; user-select: none; }
+.chips input:checked + span { background: var(--accent-soft); border-color: var(--accent); color: var(--fg); font-weight: 500; }
+.chips input:focus-visible + span { outline: 2px solid var(--accent); outline-offset: 2px; }
+.note { width: 100%; box-sizing: border-box; border: 1px solid var(--line); border-radius: 6px; background: var(--bg); color: var(--fg); font: inherit; font-size: .85rem; padding: 5px 8px; }
+.foot { color: var(--muted); font-size: .85rem; }
+button.copy { font: inherit; font-size: .85rem; border: 1px solid var(--line); background: var(--surface); color: var(--fg); border-radius: 6px; padding: 4px 10px; cursor: pointer; }
+@media (prefers-reduced-motion: reduce) { .progress > span { transition: none; } }
+</style>
+
+<div class="wrap">
+  <header style="display:grid;gap:10px">
+    <h1>Declared commit labels</h1>
+    <p class="lede">Each row is the subject line of a commit that a project lists in its <code>.git-blame-ignore-revs</code> file. Pick the one category that best describes what the commit does. Judge from the subject line and repository name only; when two categories fit, choose the one that names the main change. Your answers save automatically.</p>
+  </header>
+
+  <details class="defs" id="defs">
+    <summary>Category definitions</summary>
+    <dl>
+      <dt>Formatter</dt><dd>An automatic code formatter was run (Black, Prettier, clang-format, rustfmt, scalafmt, pgindent, RuboCop autocorrect and similar), or its configuration was applied to the code.</dd>
+      <dt>Whitespace</dt><dd>Only whitespace, indentation, tabs, line endings, or trailing spaces change, without naming a formatter.</dd>
+      <dt>Lint or spelling</dt><dd>Fixes for linter or static-analysis warnings (flake8, cppcheck, clang-tidy, pyupgrade), typos, or spelling.</dd>
+      <dt>Style</dt><dd>Manual style or cleanup changes that are not a formatter run: braces, quotes, import order, naming conventions, coding-standard fixes.</dd>
+      <dt>Migration</dt><dd>Conversion to another language, syntax, or API version: Java to Kotlin, Python 2 to 3, new namespace syntax, modernized idioms.</dd>
+      <dt>Move or rename</dt><dd>Files, directories, or code elements are moved, renamed, split, or reorganized.</dd>
+      <dt>License or header</dt><dd>License texts, copyright notices, or file headers are added or updated.</dd>
+      <dt>Refactoring</dt><dd>Structural code changes that keep behavior: replacing helpers, extracting functions, adding type annotations.</dd>
+      <dt>Other</dt><dd>Anything else, including merges and subjects that give no clue.</dd>
+    </dl>
+  </details>
+
+  <div class="bar" role="status" aria-live="polite">
+    <span class="count" id="count">0 / 100</span>
+    <div class="progress" aria-hidden="true"><span id="fill"></span></div>
+    <span class="status" id="status">Connecting…</span>
+  </div>
+
+  <ol class="items" id="items"></ol>
+
+  <p class="foot" id="foot">When all rows are labeled, you are done; the study author reads the answers directly. <button class="copy" id="copy" type="button">Copy my answers</button></p>
+</div>
+
+<script>
+const ITEMS = __ITEMS__;
+const CATS = [["formatter","Formatter"],["whitespace","Whitespace"],["lint","Lint or spelling"],["style","Style"],["migration","Migration"],["move/rename","Move or rename"],["license/header","License or header"],["refactoring","Refactoring"],["other","Other"]];
+const state = { labels: {}, notes: {} };
+let ref = null, saveTimer = null, saving = false, pending = false;
+const LS = "declared-commit-labels-v1";
+
+function setStatus(text, warn) {
+  const s = document.getElementById("status");
+  s.textContent = text; s.classList.toggle("warn", !!warn);
+}
+function loadLocal() {
+  try { const raw = localStorage.getItem(LS); if (raw) Object.assign(state, JSON.parse(raw)); } catch (e) {}
+}
+function saveLocal() {
+  try { localStorage.setItem(LS, JSON.stringify(state)); } catch (e) {}
+}
+function updateProgress() {
+  const n = ITEMS.filter(it => state.labels[it.id]).length;
+  document.getElementById("count").textContent = n + " / " + ITEMS.length;
+  document.getElementById("fill").style.width = (100 * n / ITEMS.length) + "%";
+  for (const it of ITEMS) {
+    const li = document.getElementById("row-" + it.id);
+    if (li) li.classList.toggle("done", !!state.labels[it.id]);
+  }
+}
+function render() {
+  const ol = document.getElementById("items");
+  ol.textContent = "";
+  ITEMS.forEach((it, i) => {
+    const li = document.createElement("li"); li.className = "item"; li.id = "row-" + it.id;
+    const head = document.createElement("div"); head.className = "head";
+    const num = document.createElement("span"); num.className = "num"; num.textContent = String(i + 1).padStart(3, "0");
+    const box = document.createElement("div"); box.style.minWidth = "0";
+    const subj = document.createElement("div"); subj.className = "subject"; subj.textContent = it.subject;
+    const repo = document.createElement("div"); repo.className = "repo"; repo.textContent = it.repo;
+    box.append(subj, repo); head.append(num, box);
+    const chips = document.createElement("div"); chips.className = "chips"; chips.setAttribute("role", "radiogroup");
+    chips.setAttribute("aria-label", "Category for commit " + (i + 1));
+    for (const [value, label] of CATS) {
+      const l = document.createElement("label");
+      const input = document.createElement("input");
+      input.type = "radio"; input.name = "cat-" + it.id; input.id = "cat-" + it.id + "-" + value.replace("/", "-"); input.value = value;
+      input.checked = state.labels[it.id] === value;
+      input.addEventListener("change", () => { state.labels[it.id] = value; changed(); });
+      const span = document.createElement("span"); span.textContent = label;
+      l.append(input, span); chips.append(l);
+    }
+    const note = document.createElement("input");
+    note.className = "note"; note.id = "note-" + it.id; note.type = "text"; note.placeholder = "Optional note";
+    note.value = state.notes[it.id] || "";
+    note.addEventListener("input", () => { state.notes[it.id] = note.value; changed(); });
+    li.append(head, chips, note); ol.append(li);
+  });
+  updateProgress();
+}
+function changed() {
+  updateProgress(); saveLocal();
+  if (!ref) return;
+  clearTimeout(saveTimer); saveTimer = setTimeout(flush, 700);
+  setStatus("Saving…");
+}
+async function flush() {
+  if (saving) { pending = true; return; }
+  saving = true;
+  try {
+    await ref.set({ labels: state.labels, notes: state.notes, updatedAt: new Date().toISOString() });
+    setStatus("Saved");
+  } catch (e) {
+    setStatus(e && e.code === "invalid_argument" ? "You can view this form but not save answers." : "Could not save. Your answers are kept in this browser.", true);
+  } finally {
+    saving = false;
+    if (pending) { pending = false; flush(); }
+  }
+}
+document.getElementById("copy").addEventListener("click", async () => {
+  const text = JSON.stringify(state);
+  try { await navigator.clipboard.writeText(text); setStatus("Answers copied"); }
+  catch (e) { setStatus("Copy was blocked. Your answers are saved here.", true); }
+});
+
+loadLocal();
+render();
+(async () => {
+  const [db, user] = await Promise.all([claude.use("db"), claude.use("user")]);
+  const uid = user ? await user.id() : null;
+  if (!db || !uid) { setStatus("Saved in this browser only. Sign in to share answers.", true); return; }
+  ref = db.doc("ratings/" + uid);
+  try {
+    const snap = await ref.get();
+    if (snap.exists) {
+      const d = snap.data() || {};
+      state.labels = Object.assign({}, d.labels || {}, state.labels);
+      state.notes = Object.assign({}, d.notes || {}, state.notes);
+      render();
+    }
+    setStatus("Ready");
+    if (Object.keys(state.labels).length) flush();
+  } catch (e) {
+    setStatus("Could not reach the answer store. Your answers are kept in this browser.", true);
+  }
+})();
+</script>

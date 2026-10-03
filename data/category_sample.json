@@ -1,0 +1,602 @@
+[
+ {
+  "repo": "blender/blender",
+  "sha": "c207f7c22e1439e0b285fba5d2c072bdae23f981",
+  "subject": "Cleanup: use doxy sections for imbuf\n",
+  "rule": "style"
+ },
+ {
+  "repo": "godotengine/godot",
+  "sha": "e4213e66b2dd8f5a87d8cf5015ac83ba3143279d",
+  "subject": "Add missing copyright headers and fix formatting\n",
+  "rule": "formatter"
+ },
+ {
+  "repo": "lichess-org/lila",
+  "sha": "1aae0c7b022f9e505e1ca7fec3b32efeef9f9981",
+  "subject": "Reformat with scalafmt 3.8.1\n",
+  "rule": "formatter"
+ },
+ {
+  "repo": "secdev/scapy",
+  "sha": "8773983edb0336db7aa84777dee2aa9892508418",
+  "subject": "Merge pull request #1621 from guedou/PEPin_F405\n",
+  "rule": "other"
+ },
+ {
+  "repo": "timber/timber",
+  "sha": "b2474ccd46f9374d52f00c8a195be2266463cf4f",
+  "subject": "CS: array\n",
+  "rule": "style"
+ },
+ {
+  "repo": "nasa/openmct",
+  "sha": "8040b275fcf2ba71b42cd72d4daa64bb25c19c2d",
+  "subject": "Update copyright date (#6395)\n",
+  "rule": "license/header"
+ },
+ {
+  "repo": "RfidResearchGroup/proxmark3",
+  "sha": "eef2a6308138b08bbf04f529957dd9da8b0fb6a8",
+  "subject": "cppchecker\n",
+  "rule": "other"
+ },
+ {
+  "repo": "v8/v8",
+  "sha": "d1b27019d3bf86360ea838c317f8505fac6d3a7e",
+  "subject": "[include] Split out v8.h\n",
+  "rule": "other"
+ },
+ {
+  "repo": "ankidroid/Anki-Android",
+  "sha": "062dc97f4dc80928dbd69dba56b2c299893042bf",
+  "subject": "refactor: convert FixedPreferencesTitleLength to Kotlin\n",
+  "rule": "migration"
+ },
+ {
+  "repo": "ankidroid/Anki-Android",
+  "sha": "c902c5c4d9ecaeb69c08552045f301a7d617202e",
+  "subject": "refactor: Convert YAxis to Kotlin\n",
+  "rule": "migration"
+ },
+ {
+  "repo": "Redot-Engine/redot-engine",
+  "sha": "0be6d925dc3c6413bce7a3ccb49631b8e4a6e67a",
+  "subject": "Style: clang-format: Disable KeepEmptyLinesAtTheStartOfBlocks\n",
+  "rule": "formatter"
+ },
+ {
+  "repo": "ZoneMinder/zoneminder",
+  "sha": "6c9983155c65848a3e67976445cd20fb4fbfe108",
+  "subject": "Build: Reindent the CMakeLists\n",
+  "rule": "whitespace"
+ },
+ {
+  "repo": "MetaMask/metamask-extension",
+  "sha": "31175625b446cb5d18b17db23018bca8b14d280c",
+  "subject": "Folder restructure (#6304)\n",
+  "rule": "move/rename"
+ },
+ {
+  "repo": "ankidroid/Anki-Android",
+  "sha": "be9f4b8c03730399668191d209ed05e8e36de768",
+  "subject": "Migrate CsvProcessIntegrationTest.java to Kotlin\n",
+  "rule": "migration"
+ },
+ {
+  "repo": "py-pdf/pypdf",
+  "sha": "a89ff74d8c0203278a039d9496a3d8df4d134f84",
+  "subject": "STY: Docstring formatting (#1033)\n",
+  "rule": "formatter"
+ },
+ {
+  "repo": "matplotlib/matplotlib",
+  "sha": "213061c0804530d04bbbd5c259f10dc8504e5b2b",
+  "subject": "STY: Apply trailing-whitespace pre-commit hook\n",
+  "rule": "formatter"
+ },
+ {
+  "repo": "beetbox/beets",
+  "sha": "1db46dfeb6607c164afb247d8da82443677795c1",
+  "subject": "reformat flake8 errors\n",
+  "rule": "formatter"
+ },
+ {
+  "repo": "instructure/canvas-lms",
+  "sha": "502aa068da4a7dd565cb5a78a5bf4d13d6069acc",
+  "subject": "rubocop: Layout/Multiline*LineBreaks\n",
+  "rule": "formatter"
+ },
+ {
+  "repo": "ankidroid/Anki-Android",
+  "sha": "daa1101a97ee788221f9aa2ad02dc1b55b254878",
+  "subject": "Convert BackupManagerTestUtilities.kt to Kotlin com.ichi2.testutils.BackupManagerTestUtilities\n",
+  "rule": "migration"
+ },
+ {
+  "repo": "symfony/symfony",
+  "sha": "2e0c0d39bdc99712cc40b8a5b77e267150a92509",
+  "subject": "Merge branch '7.2' into 7.3\n",
+  "rule": "other"
+ },
+ {
+  "repo": "dbcli/mycli",
+  "sha": "9dbad2c5be3786eacbb127362b9b37f41b4d4785",
+  "subject": "Merge pull request #1739 from dbcli/RW/gather-pytest-files\n",
+  "rule": "other"
+ },
+ {
+  "repo": "chocolatey/choco",
+  "sha": "b7c619f10e42a8dd57b6f42c59b735d74e1890c3",
+  "subject": "(maint) formatting\n",
+  "rule": "formatter"
+ },
+ {
+  "repo": "mui/material-ui",
+  "sha": "fd7a2545a6832ef342051b293615acf975f408e5",
+  "subject": "Bump prettier from 2.1.2 to 2.2.0 (#23655)\n",
+  "rule": "formatter"
+ },
+ {
+  "repo": "apollographql/apollo-client",
+  "sha": "994ae91f16ea4c8ee28818bd7eaac47e4765c660",
+  "subject": "Reformat missed files from #11170\n",
+  "rule": "formatter"
+ },
+ {
+  "repo": "gitbucket/gitbucket",
+  "sha": "a54fb4960ff0762738f4895cdc29bf2715a57f87",
+  "subject": "Reformat with scalafmt 3.9.7\n",
+  "rule": "formatter"
+ },
+ {
+  "repo": "GoogleCloudPlatform/generative-ai",
+  "sha": "221c0b03b29e4abf5a8d07daf2c47d7752a053a4",
+  "subject": "ci: Add Notebook linter source code for upgrades/customizability (#908)\n",
+  "rule": "lint"
+ },
+ {
+  "repo": "bilawalsidhu/gods-eye-view",
+  "sha": "2aca7aecbb38c8554d40ddbc415fec37b3a65ec4",
+  "subject": "style: format remaining owned runtime modules\n",
+  "rule": "formatter"
+ },
+ {
+  "repo": "sphinx-doc/sphinx",
+  "sha": "9b38e8746835c677f60296617fcd651880efadac",
+  "subject": "Update copyright for 2020\n",
+  "rule": "license/header"
+ },
+ {
+  "repo": "chocolatey/choco",
+  "sha": "5e29a252b52ef4c5c5324844d7796845b00db2d8",
+  "subject": "(maint) formatting\n",
+  "rule": "formatter"
+ },
+ {
+  "repo": "cmderdev/cmder",
+  "sha": "3859f6ffc088b2ae78748abc84986f4adcadcd41",
+  "subject": "consistent indentation\n",
+  "rule": "whitespace"
+ },
+ {
+  "repo": "qpdf/qpdf",
+  "sha": "7775aec33e55db7a9440b6bcf402c062df1ee967",
+  "subject": "Refactor QPDFWriter::preserveObjectStreams\n",
+  "rule": "refactoring"
+ },
+ {
+  "repo": "postgres/postgres",
+  "sha": "c0e96b49e588b2a5ab501a2acc03b96ff76cf288",
+  "subject": "perltidy run on the MSVC build system\n",
+  "rule": "style"
+ },
+ {
+  "repo": "ankidroid/Anki-Android",
+  "sha": "b2a03f7375ae6c7c54a8815bcfde37c85d8aaae4",
+  "subject": "Convert ClipboardUtilTest.kt to Kotlin com.ichi2.utils.ClipboardUtilTest\n",
+  "rule": "migration"
+ },
+ {
+  "repo": "lichess-org/lila",
+  "sha": "25f3a04cfa92992a2109e7cb3f3ec429a972ca8f",
+  "subject": "Reformat with scalafmt 3.7.11\n",
+  "rule": "formatter"
+ },
+ {
+  "repo": "mruby/mruby",
+  "sha": "6fc5dc986a5ffc1a74c63ad0617ea1dcc10d3cdd",
+  "subject": "Extend the tab with 8 whitespace\n",
+  "rule": "whitespace"
+ },
+ {
+  "repo": "ruby/ruby",
+  "sha": "48b09aae7ec5632209229dcc294dd0d75a93a17f",
+  "subject": "[ruby/digest] Revert tab-expansion in external files\n",
+  "rule": "whitespace"
+ },
+ {
+  "repo": "OSGeo/gdal",
+  "sha": "80a603a046c24446dee9bd73bc88fe124f79c486",
+  "subject": "Apply .clang-format to frmts/jdem\n",
+  "rule": "formatter"
+ },
+ {
+  "repo": "postgres/postgres",
+  "sha": "b27644bade0348d0dafd3036c47880a349fe9332",
+  "subject": "Sync typedefs.list with the buildfarm.\n",
+  "rule": "other"
+ },
+ {
+  "repo": "mui/material-ui",
+  "sha": "65d5646a36c2250075534971fae79ea9cf624663",
+  "subject": "Bump prettier from 2.2.0 to 2.2.1 (#23767)\n",
+  "rule": "formatter"
+ },
+ {
+  "repo": "v8/v8",
+  "sha": "35f3e9d0e654e84646a0b98f29e4a2786cdca4b1",
+  "subject": "Reland: [objects.h splitting] Move Map and related classes.\n",
+  "rule": "move/rename"
+ },
+ {
+  "repo": "rails/rails",
+  "sha": "12a70404cd164008879e63cc320356e6afee3adc",
+  "subject": "modernizes hash syntax in actioncable\n",
+  "rule": "migration"
+ },
+ {
+  "repo": "RfidResearchGroup/proxmark3",
+  "sha": "e460a4e6ca6fe054ff9a2b58e65ad58679566e68",
+  "subject": "cppchecker - param name\n",
+  "rule": "other"
+ },
+ {
+  "repo": "RfidResearchGroup/proxmark3",
+  "sha": "89a05b47a80d261597d7320d0b292a0989243cd5",
+  "subject": "cppcheck fixes const\n",
+  "rule": "other"
+ },
+ {
+  "repo": "rails/rails",
+  "sha": "d22e522179c1c90e658c3ed0e9b972ec62306209",
+  "subject": "modernizes hash syntax in activerecord\n",
+  "rule": "migration"
+ },
+ {
+  "repo": "micropython/micropython",
+  "sha": "3dc324d3f1312e40d3a8ed87e7244966bb756f26",
+  "subject": "tests: Format all Python code with black, except tests in basics subdir.\n",
+  "rule": "formatter"
+ },
+ {
+  "repo": "ankidroid/Anki-Android",
+  "sha": "86ab90a815409b248e58577130980fee1888a1cb",
+  "subject": "Migrate DeckComparator.java to Kotlin\n",
+  "rule": "migration"
+ },
+ {
+  "repo": "oven-sh/bun",
+  "sha": "4ec410e0d7c5f6a712c323444edbf56b48d432d8",
+  "subject": "internal: make `@import(\"bun\")` work in zig (#19096)\n",
+  "rule": "other"
+ },
+ {
+  "repo": "ankidroid/Anki-Android",
+  "sha": "8d9e79f90b2bceecb7b846650f6a0bb6605bf4be",
+  "subject": "Migrate FieldControllerBase.java to kotlin\n",
+  "rule": "migration"
+ },
+ {
+  "repo": "scipy/scipy",
+  "sha": "9d41d85c472438cf17211b843de7c770868d25a4",
+  "subject": "STY: fft: E501 (line length) clean up\n",
+  "rule": "other"
+ },
+ {
+  "repo": "dotnet/runtime",
+  "sha": "7aa69f096ff5b56e3669b0fe344b85b04426a52e",
+  "subject": "Split gc.cpp: trim memory.cpp\n",
+  "rule": "other"
+ },
+ {
+  "repo": "OSGeo/gdal",
+  "sha": "60f2f366a8e56389f653da9b88ca91b437472bee",
+  "subject": "Apply .clang-format to frmts/blx\n",
+  "rule": "formatter"
+ },
+ {
+  "repo": "quantumlib/Cirq",
+  "sha": "77fb93af5ebbb5bcf7f8a4dc3fd2fba0e827488c",
+  "subject": "Format cirq-google with latest version of black (#5160)\n",
+  "rule": "formatter"
+ },
+ {
+  "repo": "postgres/postgres",
+  "sha": "719fe0779d8d116bf8ee06056fed4c1257f1744c",
+  "subject": "Pre-beta mechanical code beautification, step 3: run reformat-dat-files.\n",
+  "rule": "formatter"
+ },
+ {
+  "repo": "DefinitelyTyped/DefinitelyTyped",
+  "sha": "dd8677457ec28cd0d26ef40bca302176ceb39a71",
+  "subject": "\ud83e\udd16 Merge PR #66353 [ramda] ran dprint fmt by @JoshuaKGoldberg\n",
+  "rule": "formatter"
+ },
+ {
+  "repo": "symfony/symfony",
+  "sha": "77bd236b8da064c90b19b84a35becfb3e43348db",
+  "subject": "CS fixes\n",
+  "rule": "style"
+ },
+ {
+  "repo": "cakephp/cakephp",
+  "sha": "df42951a67281549f5ccdf9a65cfe4c2c8c69a6e",
+  "subject": "CS: Trailing comma on function calls (#18032)\n",
+  "rule": "whitespace"
+ },
+ {
+  "repo": "postgres/postgres",
+  "sha": "239d769e7e05e0a5ef3bd6828e93e22ef3962780",
+  "subject": "pgindent run for 9.0, second run\n",
+  "rule": "whitespace"
+ },
+ {
+  "repo": "timescale/timescaledb",
+  "sha": "a3ef0384655d57200e83ad7b13c91a31177b97c1",
+  "subject": "Fix clang-tidy warning `bugprone-macro-parentheses`\n",
+  "rule": "style"
+ },
+ {
+  "repo": "scipy/scipy",
+  "sha": "9cf72e4599e0a22902ef3bc1a42e645240b1734d",
+  "subject": "MAINT: lint: clean-up for UP rules\n",
+  "rule": "lint"
+ },
+ {
+  "repo": "postgres/postgres",
+  "sha": "bdf46af748d0f15f257c99bf06e9e25aba6a24f9",
+  "subject": "Post-feature-freeze pgindent run.\n",
+  "rule": "whitespace"
+ },
+ {
+  "repo": "XRPLF/rippled",
+  "sha": "3d1b3a49b3601a0a7037fa0b19d5df7b5e0e2fc1",
+  "subject": "refactor: Rename `rippled.cfg` to `xrpld.cfg` (#6098)\n",
+  "rule": "move/rename"
+ },
+ {
+  "repo": "pytorch/pytorch",
+  "sha": "cee06e74eeb54994b97000a02b715a4e63a97951",
+  "subject": "Apply clang-format for ATen/core/dispatch headers (#143620)\n",
+  "rule": "formatter"
+ },
+ {
+  "repo": "dicedb/dicedb",
+  "sha": "54c97479356ecf41b4b63733494a1be2ab919e17",
+  "subject": "Remove `master` and `slave` from source code (#591)\n",
+  "rule": "other"
+ },
+ {
+  "repo": "tmuxinator/tmuxinator",
+  "sha": "960085a50a57518c53de98e71753ae3328fc0a6a",
+  "subject": "chore: Fix rubocop failures\n",
+  "rule": "formatter"
+ },
+ {
+  "repo": "beetbox/beets",
+  "sha": "a6e5201ff3fad4c69bf24d17bace2ef744b9f51b",
+  "subject": "Apply formatting tools to all files\n",
+  "rule": "formatter"
+ },
+ {
+  "repo": "chocolatey/choco",
+  "sha": "4f3454295d332f4b41ad84224d0e5b5dc6e20eb8",
+  "subject": "(maint) formatting\n",
+  "rule": "formatter"
+ },
+ {
+  "repo": "RfidResearchGroup/proxmark3",
+  "sha": "35bea0fbaaef34102566b24fe797ca72c21107c1",
+  "subject": "make style\n",
+  "rule": "style"
+ },
+ {
+  "repo": "apache/airflow",
+  "sha": "2a34dc9e8470285b0ed2db71109ef4265e29688b",
+  "subject": "Enable string normalization in python formatting - providers (#27205)\n",
+  "rule": "formatter"
+ },
+ {
+  "repo": "astropy/astropy",
+  "sha": "53ba687f90131a7b5a578af32b376b8fac04863a",
+  "subject": "[black] Allow `black` to run on `astropy.units`\n",
+  "rule": "formatter"
+ },
+ {
+  "repo": "OSGeo/gdal",
+  "sha": "45b4d39690ff23f3a23226d3646062983f95e63b",
+  "subject": "Apply .clang-format to ogr/ogrsf_frmts/ntf\n",
+  "rule": "formatter"
+ },
+ {
+  "repo": "tensorflow/tensorboard",
+  "sha": "5aaf86506448c05154c8164c924ab633b1eb8c5e",
+  "subject": "prettier: reformat directory tensorboard/plugins/custom_scalar\n",
+  "rule": "formatter"
+ },
+ {
+  "repo": "hibernate/hibernate-orm",
+  "sha": "bede74dc6f816065c78e31cd62ef16981dd90497",
+  "subject": "Move util/ and test/ under tooling/\n",
+  "rule": "move/rename"
+ },
+ {
+  "repo": "astral-sh/ruff",
+  "sha": "63b7ee8accd87e1e6b9bf04218d352fd59d255bd",
+  "subject": "[ty] Move binary expression logic out of `builder.rs` (#23649)\n",
+  "rule": "move/rename"
+ },
+ {
+  "repo": "postgres/postgres",
+  "sha": "21d304dfedb4f26d0d6587d9ac39b1b5c499bb55",
+  "subject": "Final pgindent + perltidy run for v10.\n",
+  "rule": "whitespace"
+ },
+ {
+  "repo": "RfidResearchGroup/proxmark3",
+  "sha": "b3f84bf7b3459152e3bfef8e9c9928ff7ccc2236",
+  "subject": "make style\n",
+  "rule": "style"
+ },
+ {
+  "repo": "mamba-org/mamba",
+  "sha": "98f2530d2384f7e4a03742b5b191919391ce71e6",
+  "subject": "Add cpp linter and fix warnings\n",
+  "rule": "lint"
+ },
+ {
+  "repo": "gitkraken/vscode-gitlens",
+  "sha": "85769575493b939733a3dee5a590c2407923f31b",
+  "subject": "Spaces -> tabs\n",
+  "rule": "whitespace"
+ },
+ {
+  "repo": "tensorflow/tensorboard",
+  "sha": "1420ad645db2fa4eca5bb93292f692603e0c1d4b",
+  "subject": "prettier: reformat directory tensorboard/plugins/distribution\n",
+  "rule": "formatter"
+ },
+ {
+  "repo": "RfidResearchGroup/proxmark3",
+  "sha": "0204714f7ed54adb0c5a0fec4ff3a18a6af71444",
+  "subject": "make style\n",
+  "rule": "style"
+ },
+ {
+  "repo": "angular/angular",
+  "sha": "f307e95459898b9027d5e13357a809d8952e9017",
+  "subject": "refactor: migrate zone.js to prettier formatting (#55427)\n",
+  "rule": "formatter"
+ },
+ {
+  "repo": "postgres/postgres",
+  "sha": "a32450a5855eed4bfd756ef292ee45d3c754665b",
+  "subject": "pgindent run before 6.3 release, with Thomas' requested changes.\n",
+  "rule": "whitespace"
+ },
+ {
+  "repo": "pytest-dev/pytest",
+  "sha": "75d0b899bbb56d6849e9d69d83a9426ed3f43f8b",
+  "subject": "ran pyupgrade-docs again\n",
+  "rule": "lint"
+ },
+ {
+  "repo": "rust-lang/rust",
+  "sha": "c682aa162b0d41e21cc6748f4fecfe01efb69d1f",
+  "subject": "Reformat using the new identifier sorting from rustfmt\n",
+  "rule": "formatter"
+ },
+ {
+  "repo": "matomo-org/matomo",
+  "sha": "1d0691ca25da156e4ea3fa2a9eed9be55c9dcdf2",
+  "subject": "[Coding Style] Enable rules Squiz.Functions.FunctionDeclarationArgumentSpacing.* (#21826)\n",
+  "rule": "style"
+ },
+ {
+  "repo": "refined-github/refined-github",
+  "sha": "b6dc0edc94cebdee74d67f5919f46c28cd96b9f8",
+  "subject": "Lint (ESM file imports + named functions) (#6613)\n",
+  "rule": "lint"
+ },
+ {
+  "repo": "crablang/crab",
+  "sha": "95e00bfed801e264e9c4ac817004153ca0f19eb6",
+  "subject": "Format libcore with rustfmt\n",
+  "rule": "formatter"
+ },
+ {
+  "repo": "sphinx-doc/sphinx",
+  "sha": "14a9289d780240bbce78ad3640e8e1b1b12df43f",
+  "subject": "Use PEP 604 types\n",
+  "rule": "refactoring"
+ },
+ {
+  "repo": "sphinx-doc/sphinx",
+  "sha": "823a947bbf2a4bf63558cf0a4ed42056f5da3166",
+  "subject": "Migrate to py3 style type annotation: sphinx.transforms.post_transforms.images\n",
+  "rule": "style"
+ },
+ {
+  "repo": "angular/angular",
+  "sha": "a5b5b7d5ef84b9852d2115dd7a764f4ab3299379",
+  "subject": "refactor: migrate core/primitives to prettier formatting (#55387)\n",
+  "rule": "formatter"
+ },
+ {
+  "repo": "ankidroid/Anki-Android",
+  "sha": "dab9bb8475f897c5b9893215d51c6a8280030c48",
+  "subject": "refactor: convert CardBrowser_CardCollectionTest to Kotlin\n",
+  "rule": "migration"
+ },
+ {
+  "repo": "lichess-org/lila",
+  "sha": "73e7950a05caaf5e6d697066d7c1b1c0295bf3d8",
+  "subject": "Reformat with scalafmt 3.5.8\n",
+  "rule": "formatter"
+ },
+ {
+  "repo": "postgres/postgres",
+  "sha": "785941cdc359c6e595201ffb0df9d28f3f7173a4",
+  "subject": "Tweak __attribute__-wrapping macros for better pgindent results.\n",
+  "rule": "whitespace"
+ },
+ {
+  "repo": "OSGeo/gdal",
+  "sha": "2e2bddc39aec67b1d277b50c8dbe08fec453c0a0",
+  "subject": "Apply .clang-format to frmts/terragen\n",
+  "rule": "formatter"
+ },
+ {
+  "repo": "python-pillow/Pillow",
+  "sha": "8de95676e0fd89f2326b3953488ab66ff29cd2d0",
+  "subject": "flake8\n",
+  "rule": "lint"
+ },
+ {
+  "repo": "beetbox/beets",
+  "sha": "d4fd36a03384b0f71144932833d9c633c1f9545f",
+  "subject": "sort: Update imports\n",
+  "rule": "other"
+ },
+ {
+  "repo": "beetbox/beets",
+  "sha": "ee4d6eef36269fbf99e0f566487ab21069be279f",
+  "subject": "typing: add annotations to API and export plugins\n",
+  "rule": "refactoring"
+ },
+ {
+  "repo": "sphinx-doc/sphinx",
+  "sha": "5466906c7b1ed24f0c138803fd141c5b9f995e6f",
+  "subject": "Migrate to py3 style type annotation: sphinx.writers.html5\n",
+  "rule": "style"
+ },
+ {
+  "repo": "OSGeo/gdal",
+  "sha": "68f98a759c3fad8bf75f6aa4907659cddc53c3bd",
+  "subject": "Apply .clang-format to ogr/ogrsf_frmts/gpx\n",
+  "rule": "formatter"
+ },
+ {
+  "repo": "rust-lang/cargo",
+  "sha": "6f8c7d5a87526d10e3bbfa4098a1002076386068",
+  "subject": "Normalize raw string indentation.\n",
+  "rule": "whitespace"
+ },
+ {
+  "repo": "matomo-org/matomo",
+  "sha": "ae4b03163792f0b6e933933e5d37df87dc3fd566",
+  "subject": "Mass conversion of all files to the newly agreed coding standard: PSR 1/2\n",
+  "rule": "other"
+ }
+]

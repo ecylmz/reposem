@@ -1,0 +1,17 @@
+{
+ "n": 100,
+ "agree": 85,
+ "procedure": "rule refined on a development sample of 100 subjects (seed 20261001), then checked on an independent sample of 100 subjects (seed 424242) excluding the development sample",
+ "development_agree_before_refinement": 80,
+ "blind_rater": {
+  "n": 100,
+  "agreement": 0.68,
+  "kappa": 0.6090886880039091,
+  "kappa_ci": [
+   0.4894051570079142,
+   0.7200584225900681
+  ],
+  "coarse_agreement": 0.82,
+  "coarse_kappa": 0.6882037069114845
+ }
+}

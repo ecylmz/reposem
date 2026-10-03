@@ -1,0 +1,95 @@
+{
+ "raters": 1,
+ "per_rater": {
+  "u_MK8mFIgRFJVfQJWObAzf0g": {
+   "items": 100,
+   "agreement": 0.68,
+   "kappa": 0.6090886880039091,
+   "kappa_ci": [
+    0.4894051570079142,
+    0.7200584225900681
+   ],
+   "agreement_ci": [
+    0.5833719774632081,
+    0.7633098918454312
+   ],
+   "coarse_agreement": 0.82,
+   "coarse_kappa": 0.6882037069114845,
+   "rule_counts": {
+    "formatter": 35,
+    "style": 12,
+    "other": 19,
+    "refactoring": 7,
+    "lint": 9,
+    "whitespace": 4,
+    "migration": 8,
+    "move/rename": 4,
+    "license/header": 2
+   },
+   "human_counts": {
+    "formatter": 30,
+    "style": 15,
+    "refactoring": 4,
+    "other": 17,
+    "whitespace": 5,
+    "lint": 13,
+    "migration": 9,
+    "move/rename": 5,
+    "license/header": 2
+   },
+   "top_disagreements": [
+    [
+     "formatter",
+     "other",
+     4
+    ],
+    [
+     "formatter",
+     "style",
+     4
+    ],
+    [
+     "formatter",
+     "lint",
+     3
+    ],
+    [
+     "style",
+     "formatter",
+     3
+    ],
+    [
+     "other",
+     "style",
+     3
+    ],
+    [
+     "other",
+     "formatter",
+     2
+    ],
+    [
+     "refactoring",
+     "other",
+     2
+    ],
+    [
+     "other",
+     "lint",
+     2
+    ],
+    [
+     "lint",
+     "style",
+     1
+    ],
+    [
+     "other",
+     "refactoring",
+     1
+    ]
+   ]
+  }
+ },
+ "between_raters": {}
+}

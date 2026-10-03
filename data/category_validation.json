@@ -1,0 +1,702 @@
+[
+ {
+  "repo": "rust-lang/cargo",
+  "sha": "d0f7c0ee31c81cd405dc2c163e4ca7638895610c",
+  "subject": "Cargo fmt\n",
+  "rule": "formatter",
+  "reader_agrees": true
+ },
+ {
+  "repo": "bentoml/OpenLLM",
+  "sha": "eddbc063743b198d72c21bd7dced59dbd949b9f1",
+  "subject": "chore(style): reduce line length and truncate compression\n",
+  "rule": "style",
+  "reader_agrees": true
+ },
+ {
+  "repo": "grokability/snipe-it",
+  "sha": "2e7046a810ce1f7562dec9d3ee4fee0cbc7262db",
+  "subject": "Apply pint to Exceptions directory\n",
+  "rule": "other",
+  "reader_agrees": false
+ },
+ {
+  "repo": "sphinx-doc/sphinx",
+  "sha": "000ae2e5000da9b9593560270398d8662f1e496d",
+  "subject": "refactor: Use PEP-526 based variable annotation (sphinx.environment)\n",
+  "rule": "refactoring",
+  "reader_agrees": true
+ },
+ {
+  "repo": "django/django",
+  "sha": "9c19aff7c7561e3a82978a272ecdaad40dda5c00",
+  "subject": "Refs #33476 -- Reformatted code with Black.\n",
+  "rule": "formatter",
+  "reader_agrees": true
+ },
+ {
+  "repo": "OSGeo/gdal",
+  "sha": "1ffa79d8b25dd9152aa0bc9a7c26acb7a7d4a46d",
+  "subject": "Apply .clang-format to ogr/ogrsf_frmts/elastic\n",
+  "rule": "formatter",
+  "reader_agrees": true
+ },
+ {
+  "repo": "instructure/canvas-lms",
+  "sha": "c65d57737a72f79e66b2d8a37594c1c459d5160f",
+  "subject": "RuboCop: Layout lib\n",
+  "rule": "formatter",
+  "reader_agrees": true
+ },
+ {
+  "repo": "astral-sh/ruff",
+  "sha": "320a3c68aebf3dd13f3496efa7ecc21f04c4f34a",
+  "subject": "Extract class and instance types (#16337)\n",
+  "rule": "refactoring",
+  "reader_agrees": true
+ },
+ {
+  "repo": "alicevision/Meshroom",
+  "sha": "aae05532b2409e3bd4c119646afc08656a916cb4",
+  "subject": "[core] Linting: Fix import order\n",
+  "rule": "lint",
+  "reader_agrees": true
+ },
+ {
+  "repo": "symfony/symfony",
+  "sha": "6ae74d38e3d20d0ffcc66c7c3d28767fab76bdfb",
+  "subject": "Merge branch '7.0' into 7.1\n",
+  "rule": "other",
+  "reader_agrees": true
+ },
+ {
+  "repo": "mruby/mruby",
+  "sha": "90ab714fda6825c4e951d47d7e6ecff033dd14e3",
+  "subject": "Adjusting indentation\n",
+  "rule": "whitespace",
+  "reader_agrees": true
+ },
+ {
+  "repo": "ipython/ipython",
+  "sha": "c5ca5a8f25432dfd6b9eccbbe446a8348bf37cfa",
+  "subject": "Apply pyupgrade to IPython/extensions/autoreload.py\n",
+  "rule": "lint",
+  "reader_agrees": true
+ },
+ {
+  "repo": "nix-community/home-manager",
+  "sha": "e30c6a41bc8548738341d10c0b17f8fead8e55ee",
+  "subject": "megasync: remove with lib\n",
+  "rule": "other",
+  "reader_agrees": true
+ },
+ {
+  "repo": "sphinx-doc/sphinx",
+  "sha": "e3eb0cc95d64afa3939ad37b1fc95fa24d06a32a",
+  "subject": "Migrate to py3 style type annotation: sphinx.ext.autosummary.generate\n",
+  "rule": "migration",
+  "reader_agrees": true
+ },
+ {
+  "repo": "pwr-Solaar/Solaar",
+  "sha": "627185079f65c9cc471194b7927c833682e4a7a3",
+  "subject": "flake8: initial fix\n",
+  "rule": "lint",
+  "reader_agrees": true
+ },
+ {
+  "repo": "aseprite/aseprite",
+  "sha": "09538f9a1aa247919ac19992db173050e173a860",
+  "subject": "clang-format all files\n",
+  "rule": "formatter",
+  "reader_agrees": true
+ },
+ {
+  "repo": "ankidroid/Anki-Android",
+  "sha": "2e13a7e6eccf5504f9e9a836f4edf1042c2536c2",
+  "subject": "refactor: Convert Anki2Importer to Kotlin\n",
+  "rule": "migration",
+  "reader_agrees": true
+ },
+ {
+  "repo": "rails/rails",
+  "sha": "0d50cae996c51630361e8514e1f168b0c48957e1",
+  "subject": "Use respond_to test helpers\n",
+  "rule": "other",
+  "reader_agrees": false
+ },
+ {
+  "repo": "gitextensions/gitextensions",
+  "sha": "89962d9f88b7efd8995492e2565e2ba1693c30e3",
+  "subject": "IDE0008 Use explicit type instead of var (#11284)\n",
+  "rule": "refactoring",
+  "reader_agrees": true
+ },
+ {
+  "repo": "playframework/playframework",
+  "sha": "ea97026a71db35ac4dcb0d312fa6370fbbe035d9",
+  "subject": "Sort imports in Scala sources (except docs)\n",
+  "rule": "style",
+  "reader_agrees": true
+ },
+ {
+  "repo": "Automattic/wp-calypso",
+  "sha": "b359eb43a7aa2ed3d14381f683965e7f563eef05",
+  "subject": "Apply `rules/jsx-boolean-value` eslint rule (#90499)\n",
+  "rule": "formatter",
+  "reader_agrees": false
+ },
+ {
+  "repo": "ankidroid/Anki-Android",
+  "sha": "c28d88b368445539ca7c57904a6bb60b0b2f5373",
+  "subject": "Convert AutoSizeCheckBoxPreference to Kotlin\n",
+  "rule": "migration",
+  "reader_agrees": true
+ },
+ {
+  "repo": "apache/flink",
+  "sha": "91d81c427aa6312841ca868d54e8ce6ea721cd60",
+  "subject": "[FLINK-26553][build] Format code with Spotless/scalafmt\n",
+  "rule": "formatter",
+  "reader_agrees": true
+ },
+ {
+  "repo": "yiisoft/yii2",
+  "sha": "9d327baa8b2c80b53d4d405678f03e6b89ff6e38",
+  "subject": "coding style fixes\n",
+  "rule": "style",
+  "reader_agrees": true
+ },
+ {
+  "repo": "GoogleCloudPlatform/generative-ai",
+  "sha": "344921c7c585c5e4c54863a58f59efabdbfe06f6",
+  "subject": "fix: Replace \"pantheon\" with \"console.cloud\" (#985)\n",
+  "rule": "refactoring",
+  "reader_agrees": false
+ },
+ {
+  "repo": "postgres/postgres",
+  "sha": "cdaa45fd4b09c64d634818e52ef7a2191ce40667",
+  "subject": "Run pgindent on range type files, per request from Tom.\n",
+  "rule": "formatter",
+  "reader_agrees": true
+ },
+ {
+  "repo": "tensorflow/tensorboard",
+  "sha": "d539b827b8a7e2c12018dde9f4405b611291ef1a",
+  "subject": "prettier: reformat directory tensorboard/plugins/profile/memory_viewer\n",
+  "rule": "formatter",
+  "reader_agrees": true
+ },
+ {
+  "repo": "sphinx-doc/sphinx",
+  "sha": "f076afd920b0b36d63608a63fae72f484d4bd65e",
+  "subject": "Migrate to py3 style type annotation: sphinx.environment.collectors.dependencies\n",
+  "rule": "migration",
+  "reader_agrees": true
+ },
+ {
+  "repo": "pbek/QOwnNotes",
+  "sha": "0d11bd1fbd899285cd17d4cae7ef861a3f11ebf6",
+  "subject": "lint: format code using clang-format\n",
+  "rule": "lint",
+  "reader_agrees": false
+ },
+ {
+  "repo": "RfidResearchGroup/proxmark3",
+  "sha": "638d6984456a7c9c9dbafd0a3dc53df5f4b0a188",
+  "subject": "make style\n",
+  "rule": "style",
+  "reader_agrees": true
+ },
+ {
+  "repo": "postgres/postgres",
+  "sha": "009dbdea02d74c72db2d1a57d5299f94f91fa975",
+  "subject": "Run pgindent on heapam.c\n",
+  "rule": "formatter",
+  "reader_agrees": true
+ },
+ {
+  "repo": "typescript-eslint/typescript-eslint",
+  "sha": "865209dd29c00e9a57367496f550dd9e95367d78",
+  "subject": "chore: enable eslint-plugin-perfectionist on scope-manager package (#9848)\n",
+  "rule": "formatter",
+  "reader_agrees": false
+ },
+ {
+  "repo": "angular/angular",
+  "sha": "711cb416260ca11ff158fc39b372efa2cf022d36",
+  "subject": "refactor(devtools): migrate devtools to prettier formatting (#53945)\n",
+  "rule": "formatter",
+  "reader_agrees": true
+ },
+ {
+  "repo": "microsoft/vscode",
+  "sha": "a3cb14be7f2cceadb17adf843675b1a59537dbbd",
+  "subject": "Organize imports in vs/code\n",
+  "rule": "other",
+  "reader_agrees": false
+ },
+ {
+  "repo": "ankidroid/Anki-Android",
+  "sha": "5f2cc77db6ab1f08a9e642b8f9846d792d475ced",
+  "subject": "cleanup: Hungarian Notation - all but 5 files (#15181)\n",
+  "rule": "style",
+  "reader_agrees": true
+ },
+ {
+  "repo": "serenity-rs/serenity",
+  "sha": "550030264952f0e0043b63f4582bb817ef8bbf37",
+  "subject": "rustfmt\n",
+  "rule": "formatter",
+  "reader_agrees": true
+ },
+ {
+  "repo": "rust-lang/cargo",
+  "sha": "384c311692e6ff537b51bcf57f804b917a702c9c",
+  "subject": "rustfmt for nightly changes.\n",
+  "rule": "formatter",
+  "reader_agrees": true
+ },
+ {
+  "repo": "postgres/postgres",
+  "sha": "d7471402794266078953f1bd113dab4913d631a1",
+  "subject": "8.4 pgindent run, with new combined Linux/FreeBSD/MinGW typedef list provided by Andrew.\n",
+  "rule": "formatter",
+  "reader_agrees": true
+ },
+ {
+  "repo": "brndnmtthws/conky",
+  "sha": "f6d42c5a69fed134a8b4ed0602c892f6f7b6e242",
+  "subject": "Fix issues building without BUILD_ARGB flag\n",
+  "rule": "other",
+  "reader_agrees": true
+ },
+ {
+  "repo": "mui/material-ui",
+  "sha": "d10f8369897f9faa98548c7e51d6637e0f75e267",
+  "subject": "[docs] Restrict docs markdown and demos to 80ch (#21481)\n",
+  "rule": "other",
+  "reader_agrees": false
+ },
+ {
+  "repo": "Choices-js/Choices",
+  "sha": "00433d200d8cccc8b544fbc8f05d5e96bf8ccff7",
+  "subject": "It isn't the 1990s where 1080p monitors were exotic\n",
+  "rule": "other",
+  "reader_agrees": true
+ },
+ {
+  "repo": "serenity-rs/serenity",
+  "sha": "dae2cb77b407044f44a7a2790d93efba3891854e",
+  "subject": "Apply rustfmt\n",
+  "rule": "formatter",
+  "reader_agrees": true
+ },
+ {
+  "repo": "astral-sh/ruff",
+  "sha": "96d9e0964cb87498ef15510ea7f896ba336659f9",
+  "subject": "[ty] Move the `deferred` submodule inside `infer/builder` (#24368)\n",
+  "rule": "move/rename",
+  "reader_agrees": true
+ },
+ {
+  "repo": "alicevision/Meshroom",
+  "sha": "5fe886b6b08fa19082dc0e1bf837fa34c2e2de2d",
+  "subject": "[tests] Linting: Remove trailing whitespaces\n",
+  "rule": "lint",
+  "reader_agrees": false
+ },
+ {
+  "repo": "tianocore/edk2",
+  "sha": "d1050b9dff1cace252aff86630bfdb59dff5f507",
+  "subject": "NetworkPkg: Apply uncrustify changes\n",
+  "rule": "formatter",
+  "reader_agrees": true
+ },
+ {
+  "repo": "bentoml/OpenLLM",
+  "sha": "8c2867d26dfff8a4cf33bc59d5a8dee159f3256a",
+  "subject": "style: define experimental guidelines (#168)\n",
+  "rule": "style",
+  "reader_agrees": true
+ },
+ {
+  "repo": "prettier/prettier",
+  "sha": "cef4bcafc7867050582d3107632bde7e722575d1",
+  "subject": "Bump Prettier dependency to 2.1.0\n",
+  "rule": "formatter",
+  "reader_agrees": true
+ },
+ {
+  "repo": "macvim-dev/macvim",
+  "sha": "a4a00a7ad0cfa26685c057c11a09bec2c962346a",
+  "subject": "patch 9.1.1372: style: braces issues in various files\n",
+  "rule": "style",
+  "reader_agrees": true
+ },
+ {
+  "repo": "RfidResearchGroup/proxmark3",
+  "sha": "3fead5b93c641e61ca5336e39566c7c325cad789",
+  "subject": "cppchecker...\n",
+  "rule": "lint",
+  "reader_agrees": true
+ },
+ {
+  "repo": "NVIDIA/nccl",
+  "sha": "dcc4eac2a5a301a3e8bf3bc10c3252d22383f5f2",
+  "subject": "[Manual] Remove unnecessary semicolons\n",
+  "rule": "other",
+  "reader_agrees": false
+ },
+ {
+  "repo": "mhammond/pywin32",
+  "sha": "059b7beb928225e389621802db758c75a7b8c58f",
+  "subject": "Format c++ sources with clang-format using clang format file aproximating PEP 7\n",
+  "rule": "formatter",
+  "reader_agrees": true
+ },
+ {
+  "repo": "scrapy/scrapy",
+  "sha": "e211ec0aa26ecae0da8ae55d064ea60e1efe4d0d",
+  "subject": "adding black formatter to all the code\n",
+  "rule": "formatter",
+  "reader_agrees": true
+ },
+ {
+  "repo": "PostgresApp/PostgresApp",
+  "sha": "a3662502047d49c0f98d3eedfc98b833b1c343db",
+  "subject": "Clean up whitespace\n",
+  "rule": "whitespace",
+  "reader_agrees": true
+ },
+ {
+  "repo": "chocolatey/choco",
+  "sha": "d7b2d08232977971e55aa4ed851345880dc07517",
+  "subject": "(maint) Remove whitespace and fix formatting\n",
+  "rule": "formatter",
+  "reader_agrees": true
+ },
+ {
+  "repo": "ibis-project/ibis",
+  "sha": "6ecaaed58c0a4e7cf38c1f04c7c2527f9587af90",
+  "subject": "refactor(ir): rename ops.WindowOp -> ops.Window\n",
+  "rule": "move/rename",
+  "reader_agrees": true
+ },
+ {
+  "repo": "RfidResearchGroup/proxmark3",
+  "sha": "c4bb26b1ef9a4c2961d42b6de927dd8410ef4f32",
+  "subject": "make style\n",
+  "rule": "style",
+  "reader_agrees": true
+ },
+ {
+  "repo": "openjdk/jdk",
+  "sha": "c8ace482edead720c865cf996729a316025d937e",
+  "subject": "8301072: Replace NULL with nullptr in share/oops/\n",
+  "rule": "refactoring",
+  "reader_agrees": true
+ },
+ {
+  "repo": "beetbox/beets",
+  "sha": "c490ac5810b70f3cf5fd8649669838e8fdb19f4d",
+  "subject": "Fix formatting\n",
+  "rule": "formatter",
+  "reader_agrees": true
+ },
+ {
+  "repo": "scipy/scipy",
+  "sha": "664a42c9a7945a0a47f876baa6d27fb4c31c6847",
+  "subject": "MAINT: blanket `noqa` clean-up\n",
+  "rule": "style",
+  "reader_agrees": false
+ },
+ {
+  "repo": "risingwavelabs/risingwave",
+  "sha": "f8266748dcb70541da944664552c1944ff8362e4",
+  "subject": "test: split input/output for planner test (#9902)\n",
+  "rule": "move/rename",
+  "reader_agrees": true
+ },
+ {
+  "repo": "RfidResearchGroup/proxmark3",
+  "sha": "4620c0b21ef3d17684de5d14ba9569355d43bf82",
+  "subject": "cppchecker fixes\n",
+  "rule": "lint",
+  "reader_agrees": true
+ },
+ {
+  "repo": "andrewyng/aisuite",
+  "sha": "41b1591f6d121cee2462e7ac204fc4ac60075d61",
+  "subject": "style: black-format the entire repo\n",
+  "rule": "formatter",
+  "reader_agrees": true
+ },
+ {
+  "repo": "EsotericSoftware/spine-runtimes",
+  "sha": "f08d58dc985f6a3a0eced59569aa49c519a9b150",
+  "subject": "License header update.\n",
+  "rule": "license/header",
+  "reader_agrees": true
+ },
+ {
+  "repo": "lightgbm-org/LightGBM",
+  "sha": "6330d6269c81dfd4c96e664b99239b8ff39ccf91",
+  "subject": "[ci] enable ruff-format on some files, add pre-commit config (#6308)\n",
+  "rule": "formatter",
+  "reader_agrees": true
+ },
+ {
+  "repo": "GoogleCloudPlatform/generative-ai",
+  "sha": "96f901d9b1f52a2c2dc467679354cfa78b9cec4a",
+  "subject": "chore: Change `gemini-1.5-pro-001` and `gemini-1.5-flash-001` to auto-updated versions (#1094)\n",
+  "rule": "other",
+  "reader_agrees": true
+ },
+ {
+  "repo": "microsoft/vscode",
+  "sha": "ae1452eea678f5266ef513f22dacebb90955d6c9",
+  "subject": "Add script to run build with noImplicitOverride\n",
+  "rule": "other",
+  "reader_agrees": true
+ },
+ {
+  "repo": "cloud-custodian/cloud-custodian",
+  "sha": "0861541554b9afef3702ab2161fb3530e690513b",
+  "subject": "releng - format c7n_left and c7n_mailer python code with black \"make format\" command (#8636)\n",
+  "rule": "formatter",
+  "reader_agrees": true
+ },
+ {
+  "repo": "astropy/astropy",
+  "sha": "1265c1a9970d467c9372f9143b8cb0a1d37facf1",
+  "subject": "[black] Allow `black` to run on `astropy.visualization`\n",
+  "rule": "formatter",
+  "reader_agrees": true
+ },
+ {
+  "repo": "RfidResearchGroup/proxmark3",
+  "sha": "b910d7ea94d6f53fa99afed7c72fe29f83c6d63c",
+  "subject": "make miscchecks\n",
+  "rule": "other",
+  "reader_agrees": true
+ },
+ {
+  "repo": "Flagsmith/flagsmith",
+  "sha": "5de0b425b0ee16b16bfb0fb33b067fa314d040fb",
+  "subject": "ci: Use Mypy directly (#5119)\n",
+  "rule": "other",
+  "reader_agrees": true
+ },
+ {
+  "repo": "RSS-Bridge/rss-bridge",
+  "sha": "951092eef374db048b77bac85e75e3547bfac702",
+  "subject": "Fix coding style missed by phpbcf (#2901)\n",
+  "rule": "style",
+  "reader_agrees": true
+ },
+ {
+  "repo": "instructure/canvas-lms",
+  "sha": "185501719c381990600ea80c25be28fe5f1ab6a9",
+  "subject": "RuboCop: Style/RaiseArgs\n",
+  "rule": "formatter",
+  "reader_agrees": true
+ },
+ {
+  "repo": "unionlabs/union",
+  "sha": "ddb429b458aa8bece799109da5c0921832d1b363",
+  "subject": "fix: spellcheck\n",
+  "rule": "other",
+  "reader_agrees": false
+ },
+ {
+  "repo": "ankidroid/Anki-Android",
+  "sha": "cc0d0861f309fd6d57ae101e1a823a7d5515c458",
+  "subject": "Migrate ServiceConnectionCallback.java to Kotlin\n",
+  "rule": "migration",
+  "reader_agrees": true
+ },
+ {
+  "repo": "ankidroid/Anki-Android",
+  "sha": "3eeaadc0edd55207f22ba8f6910fea8f7264e5d0",
+  "subject": "Convert NoteImporter to Kotlin\n",
+  "rule": "migration",
+  "reader_agrees": true
+ },
+ {
+  "repo": "frappe/hrms",
+  "sha": "f37f15b2b5329e3b0b35891e1c4fd82f48562c6d",
+  "subject": "chore: bulk format code using prettier\n",
+  "rule": "formatter",
+  "reader_agrees": true
+ },
+ {
+  "repo": "lichess-org/lila",
+  "sha": "713f23c8070a919013039f41a49461d9424c338a",
+  "subject": "Trigger `-rewrite` again\n",
+  "rule": "other",
+  "reader_agrees": true
+ },
+ {
+  "repo": "ankidroid/Anki-Android",
+  "sha": "43f1ce1469e7401fc060302f98efead033a1fe0d",
+  "subject": "refactor: Convert RobolectricTestAnnotationTest to Kotlin (#10869)\n",
+  "rule": "migration",
+  "reader_agrees": true
+ },
+ {
+  "repo": "pytest-dev/pytest",
+  "sha": "a91fe1feddbded535a4322ab854429e3a3961fb4",
+  "subject": "pre-commit run pyupgrade --all-files\n",
+  "rule": "lint",
+  "reader_agrees": true
+ },
+ {
+  "repo": "angular/angular",
+  "sha": "30a61f12a7d414ad35a1a06eaadff873880d8e8f",
+  "subject": "refactor(core): update public API golden files (#60232)\n",
+  "rule": "refactoring",
+  "reader_agrees": false
+ },
+ {
+  "repo": "GoogleCloudPlatform/generative-ai",
+  "sha": "33c6bcca6009219efbf05746b9e634c7d4d7dcba",
+  "subject": "Merge pull request #70 from RajeshThallam/qa-matching-engine\n",
+  "rule": "other",
+  "reader_agrees": true
+ },
+ {
+  "repo": "boto/boto3",
+  "sha": "50d25e9b90a74763d4f2fa411fa6a5092fcaa98c",
+  "subject": "Run ruff over codebase\n",
+  "rule": "formatter",
+  "reader_agrees": true
+ },
+ {
+  "repo": "RfidResearchGroup/proxmark3",
+  "sha": "fa10e7464eb7f7ac75320228c3cd90ef25bb182f",
+  "subject": "cppcheck unused\n",
+  "rule": "lint",
+  "reader_agrees": true
+ },
+ {
+  "repo": "RfidResearchGroup/proxmark3",
+  "sha": "f69739da7918752a8db82fd013c7d52cf43d6b4b",
+  "subject": "make style\n",
+  "rule": "style",
+  "reader_agrees": true
+ },
+ {
+  "repo": "grokability/snipe-it",
+  "sha": "8b658a19b9182bf9a19e34bc9101ee11a13ed85b",
+  "subject": "Apply pint to Providers directory\n",
+  "rule": "other",
+  "reader_agrees": false
+ },
+ {
+  "repo": "espressif/esptool",
+  "sha": "e5f5d9de3b3ecdc096ca14150c4bedd9817b709a",
+  "subject": "refactoring: Separate utility functions\n",
+  "rule": "refactoring",
+  "reader_agrees": true
+ },
+ {
+  "repo": "NVIDIA/DALI",
+  "sha": "953d588ab009ed3ab5fc8efd19f83897e6be6fef",
+  "subject": "Fixing Python code formatting (#3948)\n",
+  "rule": "formatter",
+  "reader_agrees": true
+ },
+ {
+  "repo": "rust-lang/cargo",
+  "sha": "a6ad2de0484f1910d42793f3ec73b111403099b7",
+  "subject": "cargo fmt\n",
+  "rule": "formatter",
+  "reader_agrees": true
+ },
+ {
+  "repo": "risingwavelabs/risingwave",
+  "sha": "0f2d391c420276bf8ae36f7c619ba32a64be5bb6",
+  "subject": "chore: misc changes for renaming (#1551)\n",
+  "rule": "other",
+  "reader_agrees": false
+ },
+ {
+  "repo": "linuxmint/cinnamon",
+  "sha": "19fa83fb64c300a4a3ca22b5e42ff082fe260bae",
+  "subject": "Fix whitespace\n",
+  "rule": "whitespace",
+  "reader_agrees": true
+ },
+ {
+  "repo": "EsotericSoftware/spine-runtimes",
+  "sha": "f84ae17615c506bf98c575bb800d2cf3b793df4d",
+  "subject": "Updated License Headers\n",
+  "rule": "license/header",
+  "reader_agrees": true
+ },
+ {
+  "repo": "qpdf/qpdf",
+  "sha": "a9b5ebef1f19ae50deee68401dd090c0f5587400",
+  "subject": "Minor code formatting fixes\n",
+  "rule": "formatter",
+  "reader_agrees": true
+ },
+ {
+  "repo": "discourse/discourse",
+  "sha": "23f24bfb510edb25b18b6a0d5485270c88df9b24",
+  "subject": "REFACTOR: Move javascript tests inside discourse app\n",
+  "rule": "move/rename",
+  "reader_agrees": true
+ },
+ {
+  "repo": "lichess-org/lila",
+  "sha": "84aa22bcd511a9eea369c3d6e0ee0d6c975076ca",
+  "subject": "Reformat with scalafmt 3.9.7\n",
+  "rule": "formatter",
+  "reader_agrees": true
+ },
+ {
+  "repo": "lichess-org/lila",
+  "sha": "72d993c45d9b9d17395e0f0a2726af325ef0621c",
+  "subject": "opt git hooks format on commit & link on push\n",
+  "rule": "formatter",
+  "reader_agrees": true
+ },
+ {
+  "repo": "ankidroid/Anki-Android",
+  "sha": "1bb9883e54c132cd1dc3235f8932bbab56590236",
+  "subject": "cleanup: most Hungarian Notation (#15139)\n",
+  "rule": "style",
+  "reader_agrees": true
+ },
+ {
+  "repo": "ankidroid/Anki-Android",
+  "sha": "fa5c90eb21c56b5c5f7e701400d4980c6475f4f5",
+  "subject": "refactor: Convert Utils to Kotlin\n",
+  "rule": "migration",
+  "reader_agrees": true
+ },
+ {
+  "repo": "OctoPrint/OctoPrint",
+  "sha": "b4f265d9f67508677e1697e74e248b895da7f43c",
+  "subject": "\ud83c\udfa8 pre-commit: Update all repos\n",
+  "rule": "other",
+  "reader_agrees": true
+ },
+ {
+  "repo": "ruby/ruby",
+  "sha": "2da92388b948821269b18d6b178a680f17e41750",
+  "subject": "Expand tabs in addr2line.c\n",
+  "rule": "whitespace",
+  "reader_agrees": true
+ },
+ {
+  "repo": "DefinitelyTyped/DefinitelyTyped",
+  "sha": "fae616be8a4f6952ede7a8776d157f06797c862e",
+  "subject": "\ud83e\udd16 Merge PR #66552 Formatted types/z* packages with dprint by @JoshuaKGoldberg\n",
+  "rule": "formatter",
+  "reader_agrees": true
+ }
+]

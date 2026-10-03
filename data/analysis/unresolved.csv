@@ -1,0 +1,186 @@
+repo,entry,kind,subject
+App-vNext/Polly,a450cb69b5e4549f5515cdb057a68771f56cefd7,NOT_FOUND_ON_GITHUB,
+ArduPilot/ardupilot,4d9822131354dc7dc3351f24660969f58720a1de,PR_COMMIT_SQUASHED_OR_REBASED,Tools: ros2: Reformat
+Arize-ai/phoenix,e42d23fc587bc47fbf56ed4e62e63ebc9283a7e8,PR_COMMIT_SQUASHED_OR_REBASED,chore: fmt
+Arize-ai/phoenix,1baa5417b50d51cef5b650b4ba6bdbb1fc8387df,PR_COMMIT_SQUASHED_OR_REBASED,chore: run oxc fmt
+CTFd/CTFd,de504cc6b042900c780d1bcbaa686455f1752281,PR_COMMIT_SQUASHED_OR_REBASED,format with ruff + prettier
+EFForg/rayhunter,76ffdf6bada515c9a5f63a600e6f1502288c147a,NOT_FOUND_ON_GITHUB,
+Eventual-Inc/Daft,d5e444d0a71409ae3701d4249ad877f1fb9e2235,PR_COMMIT_SQUASHED_OR_REBASED,Run formatter
+MetaMask/metamask-extension,f126efa1240eb9ef3e431474b184df3723ae1a8f,UNMERGED_COMMIT,style: reformat codebase with oxfmt
+PyGithub/PyGithub,4c24c73d34b54a061b0c800eeea64dc64c230a63,PR_COMMIT_SQUASHED_OR_REBASED,Run pre-commit autoupdate and run all hooks
+Stirling-Tools/Stirling-PDF,fcd41924f5f261febfa9d9a92994671f3ebc97d6,PR_COMMIT_SQUASHED_OR_REBASED,Update PropSync.java
+YOURLS/YOURLS,a4cb0561f627c918cf304663fd32fd2b192f1565,PR_COMMIT_SQUASHED_OR_REBASED,Replace all remaining tabs with 4 spaces
+abhigyanpatwari/GitNexus,afcc3d1523f99c77ff67c4fd1af12334660113f6,PR_COMMIT_SQUASHED_OR_REBASED,style: apply prettier formatting to entire codebase
+abhigyanpatwari/GitNexus,1491826bc8da5436d3b1eb092d9274f2c9f028a7,PR_COMMIT_SQUASHED_OR_REBASED,refactor: remove unused imports via eslint --fix
+angular/angular,ca39926de2ccaceb11de47a35e5bf9899147a877,LOCAL_NOT_ON_DEFAULT_BRANCH,
+angular/angular,4c2b0d94e22f022969b86b95af516b76322840e0,LOCAL_NOT_ON_DEFAULT_BRANCH,
+angular/components,cc8d090758b6448a3f745e1faf3e503a293b1757,PR_COMMIT_SQUASHED_OR_REBASED,build: rename docs site folder to `docs`
+antiwork/gumroad,fab227a486208bc4c632a38959346afa9ceed709,NOT_FOUND_ON_GITHUB,
+antiwork/gumroad,c31fc90531a7556ad2543e5d18b550fc206427c1,NOT_FOUND_ON_GITHUB,
+antiwork/gumroad,9538b2f49b0e211adc73a171e7859a88d1d71771,NOT_FOUND_ON_GITHUB,
+antiwork/gumroad,bc4670dcd25fbed8935552bf667984ac7c63b916,NOT_FOUND_ON_GITHUB,
+antiwork/gumroad,b22b7d0ea5e1f95b384a02df20303e35f1766b6c,NOT_FOUND_ON_GITHUB,
+antiwork/gumroad,3679e20c7b3934e94f29636683ef2b0ad2bb6673,NOT_FOUND_ON_GITHUB,
+antiwork/gumroad,eeacfe9731316c7b016b433ff7c4a31e119f3a68,NOT_FOUND_ON_GITHUB,
+antiwork/gumroad,1ac9e69ca44f7734b43b691a2f7d7290b1e24706,NOT_FOUND_ON_GITHUB,
+apollographql/apollo-client,0a67647b73abd94b706242f32b88d21a1400ad50,PR_COMMIT_SQUASHED_OR_REBASED,"format ""ObservableQuery"" test"
+apollographql/apollo-client,f7890ae96a3ba900d3de9bf8b23254bcfba18a25,PR_COMMIT_SQUASHED_OR_REBASED,Format code updated in ee0b4ae
+apollographql/apollo-client,0cb68364f2c3828badde8c74de44e9c1864fb6d4,PR_COMMIT_SQUASHED_OR_REBASED,Run prettier on DisplayClientError.js
+apple/pkl,816cd483c8adf4c04e14236c173a1dc6bd2579ea,PR_COMMIT_SQUASHED_OR_REBASED,Run spotless apply
+beetbox/beets,0ad4e19d4f870db757373f44d12ff3be2441363a,UNMERGED_COMMIT,Added auto-generate for metadata plugin api references.
+beetbox/beets,301637a1609831947cb5dd90270ed46c24b1ab1b,UNMERGED_COMMIT,pyupgrade Python 3.10
+beetbox/beets,658b184c59388635787b447983ecd3a575f4fe56,UNMERGED_COMMIT,Fix changelog formatting
+beetbox/beets,ac7f3d9da95c2d0a32e5c908ea68480518a1582d,UNMERGED_COMMIT,Configure future-annotations
+beetbox/beets,c46069654628040316dea9db85d01b263db3ba9e,UNMERGED_COMMIT,Configure ruff for py310
+beetbox/beets,4749599913a42e02e66b37db9190de11d6be2cdf,UNMERGED_COMMIT,Enable RUF rules
+beetbox/beets,bc71ec308eb938df1d349f6857634ddf2a82e339,UNMERGED_COMMIT,Address RUF012
+beetbox/beets,b4beee8ff3754b001e7504c05a2b838bfa689022,NOT_FOUND_ON_GITHUB,
+beetbox/beets,6493d4dd018e08eb5d16d5381ebff47deea98bb1,UNMERGED_COMMIT,Removed self.i in favor of more pytest like item and item_in_db fixtures.
+beetbox/beets,3a419c6a347803fc962f018f5ad027b5399ab3ae,UNMERGED_COMMIT,Enable and fix flake8-pie
+beetbox/beets,d0dc5f86a626765c86cdadc348595429f4c6e6ef,UNMERGED_COMMIT,Enable and fix flake8-return
+beetbox/beets,b7974ace83ab193b6417bdcecaf68a742bf5a1a8,UNMERGED_COMMIT,Enable and fix flake8-builtins
+bitsandbytes-foundation/bitsandbytes,34735ba89de8235ea9da6ef409f814dcea9e2038,PR_COMMIT_SQUASHED_OR_REBASED,ruff format
+blender/blender,e0cb02587012b4b2f4b18363dc7d0a7da2c02093,UNMERGED_COMMIT,"Cleanup: mostly comments, use doxy syntax & typos"
+blender/blender,1e7e94588daa66483190f45a9de5e98228f80e05,UNMERGED_COMMIT,Cleanup: PEP8 for python changes
+blender/blender,a09cc3ee1a99f2cd5040bbf30c8ab8c588bb2bb1,UNMERGED_COMMIT,GPencil: Cleanup pep8
+blender/blender,c42a6b77b52560d257279de2cb624b4ef2c0d24c,UNMERGED_COMMIT,"Cleanup: trailing space, remove tabs, pep8"
+cloudflare/workerd,d6d0607a845e6f71084ce272a1c1e8c50e244bdd,NOT_FOUND_ON_GITHUB,
+cmderdev/cmder,58db4e3419bf1e5cc1bb61fcd7ce2ebbca89243a,LOCAL_NOT_ON_DEFAULT_BRANCH,
+cmderdev/cmder,4740b836f300658b27e6ad4d79efac63c9c24c24,LOCAL_NOT_ON_DEFAULT_BRANCH,
+cmderdev/cmder,f67e5704eda60526d495be758572181f01a6cac8,LOCAL_NOT_ON_DEFAULT_BRANCH,
+cmderdev/cmder,928bdfc3b80675e745a1a6642c3636e66d1c6071,NOT_FOUND_ON_GITHUB,
+comet-ml/opik,6fcfa6f8a8c03dd5ccab6614b7b2a38395127b8d,PR_COMMIT_SQUASHED_OR_REBASED,[NA] [BE] Apply Spotless formatting to backend sources
+dendronhq/dendron,00bd5fb049eabb9739e47c7806e82cff87cb43af,UNMERGED_COMMIT,ignore: prettier changes
+dendronhq/dendron,5847877bbf41b38d49e16c030deb42929898b694,UNMERGED_COMMIT,chore: s/@dendron/@dendronhq
+dendronhq/dendron,66e4251bfe2e79ba9315e09664a59421c3000bd8,UNMERGED_COMMIT,chore: formatting changes
+dendronhq/dendron,40f7e971342e2ddf4f9a1bd98cce43ffd0b49949,UNMERGED_COMMIT,chore(eslint): add `eslint --fix` fixes
+dendronhq/dendron,62e0ac72fd1543c1c4e9f8c40231bf39e1a5db46,UNMERGED_COMMIT,chore(eslint): locally disable linting rules
+dendronhq/dendron,a67af0a6fc948b21d7dc214b974264d8e73a0f08,UNMERGED_COMMIT,chore(eslint): solve `default-case` lint rule
+dendronhq/dendron,ca90dbf177b311ba96c6ad0a233c3e8bfedfb9a0,UNMERGED_COMMIT,chore(eslint): solve `no-throw-literal` lint rule
+dendronhq/dendron,d7805765295da27235a0d8b4ed9bf4f1cbcdff5a,UNMERGED_COMMIT,chore(eslint): solve `radix` lint rule
+dendronhq/dendron,52a4edfcf86d7fa23566f35e50f69e8de0732afb,UNMERGED_COMMIT,chore(eslint): solve `no-unused-expressions` lint rule
+dendronhq/dendron,14aaa6e5d25022741fb7365d1f14d38712908f6f,UNMERGED_COMMIT,chore(eslint): solve `eqeqeq` lint rule
+dendronhq/dendron,b03ee5f5213b291d2e8d676597e064bb6977529e,UNMERGED_COMMIT,chore(eslint): disable two rules globally
+dendronhq/dendron,81daa4b64ec1febf3f117a72f412e03541366eb3,UNMERGED_COMMIT,chore(eslint): locally disable linting rules
+dendronhq/dendron,38876e08de7462c084439d5ac76a75d58e079e1d,UNMERGED_COMMIT,chore(eslitn): solve `no-empty` lint rules
+dendronhq/dendron,64be06c815fb9ed24e8699f9d687c5009098c7b8,UNMERGED_COMMIT,chore(eslint): solve `prefer-const` linting rule
+dendronhq/dendron,9046a02e14b02a95a8bfb89518a6640e499e5173,UNMERGED_COMMIT,chore(eslint): solve `react-hooks/rules-of-hooks` lint error
+dendronhq/dendron,1312c0909ec6dbd059b9e6a7e83125f28c9b458d,UNMERGED_COMMIT,chore: run prettier
+dexie/Dexie.js,4a177aff4fed5e9a92a6192755bd0aa68957e222,UNMERGED_COMMIT,chore: format entire codebase with prettier
+eza-community/eza,37ec91db827823cf32068ab930ffc83b790800b6,NOT_FOUND_ON_GITHUB,
+formbricks/formbricks,0c8fc5e974d6f9b608286b965d9bb63b01038fe6,PR_COMMIT_SQUASHED_OR_REBASED,chore: format the repo with prettier
+frappe/erpnext,a308792ee7fda18a681e9181f4fd00b36385bc23,UNMERGED_COMMIT,"refactor(treewide): formatting and ruff fixes, + manually enabled F401"
+frappe/erpnext,7b7211ac79c248a79ba8a999ff34e734d874c0ae,PR_COMMIT_SQUASHED_OR_REBASED,refactor: cleanup args structure akin to some typing
+frappe/erpnext,d827ed21adc7b36047e247cbb0dc6388d048a7f9,PR_COMMIT_SQUASHED_OR_REBASED,refactor: pass proper types to get_item_details methods
+frappe/frappe,48cf19d7e997896d12aee7c7d97f73c8df217204,NOT_FOUND_ON_GITHUB,
+frappe/frappe,653c80b8483cc41aef25cd7d66b9b6bb188bf5f8,PR_COMMIT_SQUASHED_OR_REBASED,fix: use `frappe.in_test`
+getmoto/moto,ca682c8e5647feacb26f8570f77f1bdb6b5d3b9a,PR_COMMIT_SQUASHED_OR_REBASED,automatic import sorting performed by ruff
+gitkraken/vscode-gitlens,ddd0fae46575b5aa5743ad543e11d0318a599a5a,NOT_FOUND_ON_GITHUB,
+gradio-app/gradio,69f36f98535c904e7cac2b4942cecc747ed7443c,PR_COMMIT_SQUASHED_OR_REBASED,Place components separate files (#4487)
+gradio-app/gradio,cc0cff893f9d7d472788adc2510c123967b384fe,PR_COMMIT_SQUASHED_OR_REBASED,Format The Codebase
+gradio-app/gradio,8a70e83db9c7751b46058cdd2514e6bddeef6210,PR_COMMIT_SQUASHED_OR_REBASED,switch from black to ruff formatter (#6543)
+gradio-app/gradio,7fa5e766ce0f89f1fb84c329e62c9df9c332120a,PR_COMMIT_SQUASHED_OR_REBASED,format (#4810)
+gradio-app/gradio,4bf301324b3b180fa32166ff1774312b01334c88,PR_COMMIT_SQUASHED_OR_REBASED,Lint website (#4879)
+gradio-app/gradio,980b9f60eb49ed81e4957debe7b23a559a4d4b51,PR_COMMIT_SQUASHED_OR_REBASED,format frontend code with prettier (#516)
+gradio-app/gradio,1419538ea795caa391e3de809379f10639e9e764,PR_COMMIT_SQUASHED_OR_REBASED,Refactor component directories (#5074)
+grafana/pyroscope,fca0fcf152cb304c10b94bd3b78d56a319485170,PR_COMMIT_SQUASHED_OR_REBASED,frontend: add husky + lint-staged
+guardian/frontend,8c8e3b573dafd786867c6eec3bc1b91a26e06d6c,UNMERGED_COMMIT,Reformat with scalafmt 2.5.3
+guardian/frontend,b3af67b602e9862062ca4dd9fb5038b80aaad6e2,UNMERGED_COMMIT,Reformat with scalafmt 3.8.3
+guardian/frontend,6c0512446a4c6b1ebfbe779aad810c617e0bf08f,PR_COMMIT_SQUASHED_OR_REBASED,Reformat with scalafmt 3.10.2
+handlebars-lang/handlebars.js,3d228334530860a6e3f99dc10777c84bf22292c1,PR_COMMIT_SQUASHED_OR_REBASED,Upgrade prettier to v2
+handlebars-lang/handlebars.js,dfe2eaaf20f0b679d94e5a799757c4394d80f1cc,UNMERGED_COMMIT,Format *.md files with prettier
+handlebars-lang/handlebars.js,0c1d00282ca619c3416ad819bdf53c0852b32415,PR_COMMIT_SQUASHED_OR_REBASED,Migrate to oxlint and oxfmt
+hibernate/hibernate-orm,59731c089e9d649a663c81d9622b54557d6aba37,PR_COMMIT_SQUASHED_OR_REBASED,cleanups by spotless
+hibernate/hibernate-orm,4d63ffd98cdead513ab0be0fa23f9787423092d3,PR_COMMIT_SQUASHED_OR_REBASED,spaces to tabs!
+jemalloc/jemalloc,34f359e0ca613b5f9d970e9b2152a5203c9df8d6,UNMERGED_COMMIT,Reformat the codebase with the clang-format 18.
+libigl/libigl,44b20879f1b0a456762ec5d588337a911949f824,PR_COMMIT_SQUASHED_OR_REBASED,"Renormalize line endings to LF (whitespace-only, no content change)"
+lightdash/lightdash,56cf8dc9628d0bd86d681fa784c4a9db2ec9a064,PR_COMMIT_SQUASHED_OR_REBASED,chore: format with oxfmt
+meteor/meteor,1bfad0bcbb9c495172d1475f1c6d54df8d34ceae,NOT_FOUND_ON_GITHUB,
+mhammond/pywin32,452e3dafc126faa978d67a946385bf2514477411,PR_COMMIT_SQUASHED_OR_REBASED,Format trailing-whitespaces and end-of-file with pre-commit
+mhammond/pywin32,637448f8252ab142eedd539ddf9b08259b73eecc,PR_COMMIT_SQUASHED_OR_REBASED,Run clang-format
+mhammond/pywin32,2b5191d8fc6f1d1fbde01481b49278c1957ef8f1,PR_COMMIT_SQUASHED_OR_REBASED,Run ruff format
+mhammond/pywin32,d8f97a8c8f72263d336fc4050f83e007ac6e770d,PR_COMMIT_SQUASHED_OR_REBASED,adodbapi git renormalize line endings
+mhammond/pywin32,5ed60c439db929d82acc09c9a85a417e406d6429,UNMERGED_COMMIT,"Rename `Pythonwin` folder to `pythonwin`, matching the final module name"
+mhammond/pywin32,dd12a27fb6ef43a6b3df1237f28dbf5e68f0e1c6,PR_COMMIT_SQUASHED_OR_REBASED,clang-format: Use MacroBlock for Py_*_ALLOW_THREADS formatting (format)
+microsoft/terminal,cb7a76d96c92aa9fc7b03f69148fb0c75dff191d,UNMERGED_COMMIT,change LF endings to CRLF in remote so we can sync with OS repo.
+mongodb/mongo,1adc32cdd5d6f7b8a9283d328bf7aa7d32caba6b,NOT_FOUND_ON_GITHUB,
+mongodb/mongo,ff917ea96cf91f76bbd73b0d88d626a8523c5ec0,UNMERGED_COMMIT,SERVER-72197 Run clang-format 12.0.1 on the codebase
+mongodb/mongo,ac953266322ad51ac712c1d7533af1848f6ee99b,UNMERGED_COMMIT,SERVER-66490 Apply pylinters to build system code
+mongodb/mongo,94b542762b5eed8dddd6964752436fc4c66dc2c1,UNMERGED_COMMIT,SERVER-41772 Apply clang-format 7.0.1 to the enterprise codebase
+mongodb/mongo,53c007e02d0bd34c9e4f070829af74e00e8bbba2,UNMERGED_COMMIT,SERVER-23971 Clang-Format code
+mongodb/mongo,f5a6c794a0af1a5d57db2617c2e9464eaad9f221,UNMERGED_COMMIT,SERVER-22470 Format JS code with approved style
+mongodb/mongo,ccf5c5c4bbba2bfc99afd2fe13a4f35dc8618c2f,UNMERGED_COMMIT,SERVER-22470 Format JS code with approved style
+mongodb/mongo,a0b4965b391968a531bcc65a01882653238910ca,UNMERGED_COMMIT,SERVER-18579: Clang-Format - reformat code
+mongodb/mongo,41f32193f6464f9ec94294232d6fd9e46461fb3c,UNMERGED_COMMIT,SERVER-79735 Convert jstest corpus to use es modules
+mongodb/mongo,e7310f8ef1ec7817e00fef496611ca9c7086be17,UNMERGED_COMMIT,SERVER-78551 Migrate analyze_plan library to module
+mongodb/mongo,30e8ed22011ec82011f69d28311a15b5c1fbb492,UNMERGED_COMMIT,SERVER-78419 Convert FSM to load workloads as modules
+mongodb/mongo,64e388007ec1ac3744537253540995af628bcc00,UNMERGED_COMMIT,SERVER-87034 Initial markdown format (#19276)
+mongodb/mongo,35db3811d8f749edd5b79ba910adcbc1ceb54cc4,UNMERGED_COMMIT,SERVER-88970 Added yaml formatting to server repo
+mongodb/mongo,9d997a9f44cd43a8dec7c2a17fa2dbcd875e92f6,UNMERGED_COMMIT,"SERVER-90570: Enable formatting checks for buildscripts directory, excluding idl (#22254)"
+mongodb/mongo,a2fbc8ed83f576703cce96ebb5e680cc70aac4d8,UNMERGED_COMMIT,SERVER-90571: Enable python formatting checks for buildscripts/idl directory (#22293)
+mongodb/mongo,ec4a2cefe8cafee7bc9a5e91756c2e65f1ecf307,UNMERGED_COMMIT,SERVER-90572: Enable python formatting checks for evergreen directory (#22291)
+mongodb/mongo,60af39291961535329b7ab6bec3b4f161dd1d0fa,UNMERGED_COMMIT,SERVER-90573: Enable python formatting checks for bazel directory (#22292)
+mongodb/mongo,af7d6593172a8a0ce01027a52d19de1d0215fb5b,UNMERGED_COMMIT,SERVER-90615: Enable python formatting checks for src directory (#22299)
+mongodb/mongo,9fc353de97f77520be552ddf8a6d44448f4e40d4,UNMERGED_COMMIT,SERVER-90616: Enable python formatting checks for jstests directory (#22300)
+mongodb/mongo,0cd9cfa93f7cbfee24b19f6795ae366d5fa94625,UNMERGED_COMMIT,SERVER-90617: Enable python formatting checks for site_scons directory (#22301)
+mongodb/mongo,c25ff7cb2f755b8b11b2b7b85189599b162a4059,UNMERGED_COMMIT,SERVER-90719 Add SConstruct to Ruff coverage (#22403)
+mongodb/mongo,ff6b2194e3617a338d83597d96710b1b92a18940,UNMERGED_COMMIT,"SERVER-94150 switch to v5 clang-format, reformat server (#34018)"
+mongodb/mongo,5abd171fa9d539578d5f1d3d4417a4ca4606c078,UNMERGED_COMMIT,SERVER-105050 clang-format IncludeBlocks: Regroup (#36096)
+mongodb/mongo,6c8f6aded47f260aa4f7c231b17dae3302cb1e04,UNMERGED_COMMIT,SERVER-108478 JS formatted by prettier and remove clang-format (#39656)
+mongodb/mongo,cb41b1a4790cc38c85f7eb2c9581a2e7eed9fc12,NOT_FOUND_ON_GITHUB,
+n8n-io/n8n,7e58fc4fec468aca0b45d5bfe6150e1af632acbc,PR_COMMIT_SQUASHED_OR_REBASED,refactor: Move test files alongside tested files
+n8n-io/n8n,f32b13c6ed078be042a735bc8621f27e00dc3116,PR_COMMIT_SQUASHED_OR_REBASED,refactor: move and rename design-system files and editor-ui files
+ng-bootstrap/ng-bootstrap,82c82b7907b12b4546243ca8c846e427ee67e93c,PR_COMMIT_SQUASHED_OR_REBASED,build: reformat code with Prettier
+opennextjs/opennextjs-aws,b36196d4ff17934ed71b0926effa20a5a6c1433d,PR_COMMIT_SQUASHED_OR_REBASED,chore(lint): apply biome safe fixes
+oxc-project/oxc,014b33f7ef0c2527b028de3007f3971fedb545bc,PR_COMMIT_SQUASHED_OR_REBASED,chore: reformat
+pbek/QOwnNotes,ee2b94b4dd6ae24077da9ed9bf54b2162f578518,NOT_FOUND_ON_GITHUB,
+pixel-agents-hq/pixel-agents,b94955dab19dd32cd530bd2f3580c7716bc0b448,PR_COMMIT_SQUASHED_OR_REBASED,"chore: add linting config, pre-commit hook, .nvmrc"
+playframework/playframework,5ac9eae5878afaf19dbb86fc04ea364862c6b9b8,UNMERGED_COMMIT,Reformat with scalafmt 3.9.9
+pmndrs/react-spring,4c496c8b,PR_COMMIT_SQUASHED_OR_REBASED,chore(format): replace prettier with oxfmt
+promptfoo/promptfoo,c466299b6e0ed70e87af1bb398c3cb79f9829263,PR_COMMIT_SQUASHED_OR_REBASED,chore(biome): enable useNodejsImportProtocol rule
+pymc-devs/pymc,3ea470ac964f4bd5c7207ce08a583a2e6aa7ae8a,PR_COMMIT_SQUASHED_OR_REBASED,Apply or update apache v2 license header to all files
+pypa/pip,917b41d6d73535c090fc312668dff353cdaef906,UNMERGED_COMMIT,Blacken docs/html/conf.py
+pypa/pip,ed383dd8afa8fe0250dcf9b8962927ada0e21c89,UNMERGED_COMMIT,Blacken docs/pip_sphinxext.py
+pypa/pip,228405e62451abe8a66233573035007df4be575f,UNMERGED_COMMIT,Blacken noxfile.py
+pypa/pip,f477a9f490e978177b71c9dbaa5465c51ea21129,UNMERGED_COMMIT,Blacken setup.py
+pypa/pip,e59ba23468390217479465019f8d78e724a23550,UNMERGED_COMMIT,Blacken src/pip/__main__.py
+pypa/pip,d7013db084e9a52242354ee5754dc5d19ccf062e,UNMERGED_COMMIT,Blacken src/pip/_internal/build_env.py
+pypa/pip,30e9ffacae75378fc3e3df48f754dabad037edb9,UNMERGED_COMMIT,Blacken src/pip/_internal/cache.py
+pypa/pip,8341d56b46776a805286218ac5fb0e7850fd9341,UNMERGED_COMMIT,Blacken src/pip/_internal/cli/autocompletion.py
+pypa/pip,3d3461ed65208656358b3595e25d8c31c5c89470,UNMERGED_COMMIT,Blacken src/pip/_internal/cli/base_command.py
+pypa/pip,d489b0f1b104bc936b0fb17e6c33633664ebdc0e,UNMERGED_COMMIT,Blacken src/pip/_internal/cli/cmdoptions.py
+pypa/pip,591fe4841aefe9befa0530f2a54f820c4ecbb392,UNMERGED_COMMIT,Blacken src/pip/_internal/cli/command_context.py
+pypa/pip,9265b28ef7248ae1847a80384dbeeb8119c3e2f5,UNMERGED_COMMIT,Blacken src/pip/_internal/cli/main.py
+pypa/pip,847a369364878c38d210c90beed2737bb6fb3a85,UNMERGED_COMMIT,Blacken src/pip/_internal/cli/main_parser.py
+pypa/pip,ec97119067041ae58b963935ff5f0e5d9fead80c,UNMERGED_COMMIT,Blacken src/pip/_internal/cli/parser.py
+pypa/pip,6e3b8de22fa39fa3073599ecf9db61367f4b3b32,UNMERGED_COMMIT,Blacken src/pip/_internal/cli/progress_bars.py
+pypa/pip,55405227de983c5bd5bf0858ea12dbe537d3e490,UNMERGED_COMMIT,Blacken src/pip/_internal/cli/req_command.py
+pypa/pip,d5ca5c850cae9a0c64882a8f49d3a318699a7e2e,UNMERGED_COMMIT,Blacken src/pip/_internal/cli/spinners.py
+pypa/pip,9747cb48f8430a7a91b36fe697dd18dbddb319f0,UNMERGED_COMMIT,Blacken src/pip/_internal/commands/__init__.py
+pypa/pip,1c09fd6f124df08ca36bed68085ad68e89bb1957,UNMERGED_COMMIT,Blacken src/pip/_internal/commands/cache.py
+pypa/pip,315e93d7eb87cd476afcc4eaf0f01a7b56a5037f,UNMERGED_COMMIT,Blacken src/pip/_internal/commands/check.py
+pypa/pip,8ae3b96ed7d24fd24024ccce4840da0dcf635f26,UNMERGED_COMMIT,Blacken src/pip/_internal/commands/completion.py
+pypa/pip,42ca4792202f26a293ee48380718743a80bbee37,UNMERGED_COMMIT,Blacken src/pip/_internal/commands/configuration.py
+pypa/pip,790ad78fcd43d41a5bef9dca34a3c128d05eb02c,UNMERGED_COMMIT,Blacken src/pip/_internal/commands/debug.py
+pypa/pip,a6fcc8f045afe257ce321f4012fc8fcb4be01eb3,UNMERGED_COMMIT,Blacken src/pip/_internal/commands/download.py
+pypa/pip,920e735dfc60109351fbe2f4c483c2f6ede9e52d,UNMERGED_COMMIT,Blacken src/pip/_internal/commands/freeze.py
+pypa/pip,053004e0fcf0851238b1064fbce13aea87b24e9c,UNMERGED_COMMIT,Blacken src/pip/_internal/commands/hash.py
+pypa/pip,a6b6ae487e52c2242045b64cb8962e0a992cfd76,UNMERGED_COMMIT,Blacken src/pip/_internal/commands/help.py
+qpdf/qpdf,633f73e5a7743f1915a104c8bc27cf402754b7d7,UNMERGED_COMMIT,Split QPDF.cc into QPDF.cc and QPDF_objects.cc
+qtile/qtile,2d3efb6c758ef89df9404df18a03f0f9021863b2,PR_COMMIT_SQUASHED_OR_REBASED,upgrade mypy
+reduxjs/redux,6e53b1ee2301e68235f658f07d7bc85642ff597d,LOCAL_NOT_ON_DEFAULT_BRANCH,
+scikit-image/scikit-image,68633e8c682d47ade07a891f1511a5eefda8dc9a,PR_COMMIT_SQUASHED_OR_REBASED,Autoformat using ruff
+scikit-image/scikit-image,b22ecff8d52eeb59e5d1d2e7fcc7962b4a0a84ce,PR_COMMIT_SQUASHED_OR_REBASED,Lint using ruff and cython-lint
+scipy/scipy,852776a3fe0f3d08c0bed9174f6ac33f653a8677,PR_COMMIT_SQUASHED_OR_REBASED,STY: special: use indent width of 4 in clang-format
+semantic-release/semantic-release,b06c9bbe4c6be121c5561b356d8c465c1cadffba,PR_COMMIT_SQUASHED_OR_REBASED,style: prettier
+spectreconsole/spectre.console,7b2da0a4f63bf3ceab99d2c88535e74155f2b99c,UNMERGED_COMMIT,Use file scoped namespace declarations
+spectreconsole/spectre.console,e2ad4b1ea5555e701cda4fd400bb6592e318e1ff,PR_COMMIT_SQUASHED_OR_REBASED,fixed line-endings
+statelyai/xstate,8bff3b8ad57516e9816278b77ff5e0fffafd85ca,LOCAL_NOT_ON_DEFAULT_BRANCH,
+statelyai/xstate,aeec38a6ef56bb534ff8bc968b95107ff54959cc,LOCAL_NOT_ON_DEFAULT_BRANCH,
+sysadminsmedia/homebox,6c63edb61f434e1641e0bd4986f7d5add7bfbae3,PR_COMMIT_SQUASHED_OR_REBASED,lint: apply linter fixes
+triton-lang/triton,cb68a0d9d501657258ed9f7ad7610d0784c9be9a,PR_COMMIT_SQUASHED_OR_REBASED,NFC cleanups to C++ code.
+vercel/turborepo,e9a9249db781d6498a7c2ad057149ac1cb432302,PR_COMMIT_SQUASHED_OR_REBASED,Apply EditorConfig to all files
+web-infra-dev/rspack,0043842221e9a8ff8914d644ddcdedb4a359ef8a,UNMERGED_COMMIT,chore: update rustc version
+web-infra-dev/rspack,ad68a593001497a9f0e78d9277d18f1bd613bacb,PR_COMMIT_SQUASHED_OR_REBASED,"chore(rust): run `cargo fmt` for group_imports = ""StdExternalCrate"""
+wxWidgets/wxWidgets,216232fd7c92d067c21ef28f12d7fc3020441ea8,NOT_FOUND_ON_GITHUB,
+zizmorcore/zizmor,d706f97cf294e09f4a3d22c2dc8b32a54a2fe508,PR_COMMIT_SQUASHED_OR_REBASED,"chore(deps): drop serde_yaml rename, use yaml_serde directly"
