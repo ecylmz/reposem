@@ -62,3 +62,5 @@ Reason: against uniformly drawn commits, commit size separates declared commits 
 Decided by: proposed by Claude, approved by the user.
 Effect: RQ5 changes its primary measure and its comparators before the final data is opened. RQ6 and RQ7 do not change. The development run results/develop stays as the record of the first design.
 Commit: see the next commit.
+
+2026-11-26 data: RQ7 sample of 150 repositories drawn from 11,245 no-file candidates (209 checked, 45 below 200 commits, 14 below 10 mentionable users, 0 clone failures). Commit and contributor counts come from the GitHub API on 2026-11-26, not on the frame date; the analyzed revision is the default-branch revision of 2026-10-01.

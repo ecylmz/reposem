@@ -1,0 +1,22 @@
+{
+  "command": [
+    ".venv/bin/python",
+    "src/rq7_frame.py",
+    "--out",
+    "results/rq7-frame"
+  ],
+  "cwd": "detector",
+  "git_commit": "cfc0b674c1279c63e35ab1eb263dbf23f1581d45",
+  "git_dirty": false,
+  "git_changes": [],
+  "inputs": {
+    "configs/detector.json": "bcb57ad9ee34687bc84debe2158ae6599ab9ba3de0d16bd03b4742610e549905",
+    "../data/frame_repos.jsonl": "f1feeb5a9b0519e376b8db7c4cb1528b60f96969d157992f22d3554808696207",
+    "../data/frame_presence.jsonl": "b1e910f7db93c0762f238091a6d18d6771e6fc4acd0ef1bc4aa074f74ddfce81"
+  },
+  "platform": "macOS-15.7.4-arm64-arm-64bit-Mach-O",
+  "start": "2026-11-25T21:16:34+00:00",
+  "status": "ok",
+  "end": "2026-11-25T21:33:36+00:00",
+  "exit_code": 0
+}

@@ -14,9 +14,8 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 from scipy import stats
-from sklearn.metrics import roc_auc_score
 
-from common import CONFIG, MECHANICAL_GROUPS, ROOT, seed_for
+from common import CONFIG, ROOT, seed_for
 
 B = CONFIG["bootstrap"]
 
@@ -49,55 +48,53 @@ def holm(ps):
     return adj.tolist()
 
 
-def rq5(features, split, models_dir, role):
-    df = pd.read_csv(features)
-    sp = pd.read_csv(split)
-    df = df[df.repo.isin(set(sp.loc[sp.role == role, "repo"]))]
-    failed = int((df.status != "ok").sum())
-    df = df[df.status == "ok"].reset_index(drop=True)
+def rq5(features, matched_features, split, models_dir, role):
+    """RQ5 under D-005: size-matched PU-AUC (primary) and uniform PU-AUC (secondary)."""
+    from develop_matched import baselines, combined, repo_measures
+
+    df, pairs = combined(features, matched_features, split, role)
     with open(Path(models_dir) / "models.pkl", "rb") as f:
         models = pickle.load(f)
     threshold = json.loads((Path(models_dir) / "summary.json").read_text())["threshold"]
     cat = pd.read_csv(ROOT / CONFIG["declared_csv"])[["repo", "sha", "category"]]
     df = df.merge(cat, on=["repo", "sha"], how="left")
     scores = {name: m["model"].predict_proba(df[m["columns"]].to_numpy(float))[:, 1] for name, m in models.items()}
-    scores["keyword"] = df[[f"kw_{g}" for g in MECHANICAL_GROUPS]].max(axis=1).to_numpy(float)
-    scores["whitespace_only"] = df["ws_only"].to_numpy(float)
-    scores["random"] = np.random.default_rng(seed_for("random", role)).random(len(df))
+    scores.update(baselines(df, seed_for("random", role)))
     rows = []
     for name, s in scores.items():
-        tmp = df[["repo", "label", "category"]].copy()
-        tmp["s"] = s
-        for repo, g in tmp.groupby("repo"):
-            if g.label.nunique() == 2:
-                rows.append({"repo": repo, "approach": name, "metric": "pu_auc", "value": roc_auc_score(g.label, g.s)})
-                lay = g[(g.label == 0) | g.category.isin(["formatter", "whitespace"])]
-                if lay.label.nunique() == 2:
-                    rows.append({"repo": repo, "approach": name, "metric": "pu_auc_layout", "value": roc_auc_score(lay.label, lay.s)})
-            if name == "full":
-                rows.append({"repo": repo, "approach": name, "metric": "recall_at_threshold",
-                             "value": float((g.s[g.label == 1] >= threshold).mean()) if (g.label == 1).any() else np.nan})
-                rows.append({"repo": repo, "approach": name, "metric": "flagged_unlabeled",
-                             "value": float((g.s[g.label == 0] >= threshold).mean())})
+        rows += repo_measures(df, pairs, s, name, role)
+        lay = df["label"].eq(0) | df["category"].isin(["formatter", "whitespace"])
+        lay_pairs = pairs[pairs.matched_to.isin(set(df.loc[df.category.isin(["formatter", "whitespace"]), "sha"]))]
+        for r in repo_measures(df[lay].reset_index(drop=True), lay_pairs, s[lay.to_numpy()], name, role):
+            r["metric"] = r["metric"] + "_layout"
+            rows.append(r)
+    full = scores["full"]
+    for repo, g in df.assign(s=full).groupby("repo"):
+        pos = g[g.label == 1]
+        uni = g[(g.uniform == 1) & (g.label == 0)]
+        rows.append({"repo": repo, "approach": "full", "role": role, "metric": "recall_at_threshold",
+                     "value": float((pos.s >= threshold).mean()) if len(pos) else np.nan})
+        rows.append({"repo": repo, "approach": "full", "role": role, "metric": "flagged_uniform_unlabeled",
+                     "value": float((uni.s >= threshold).mean()) if len(uni) else np.nan})
     long = pd.DataFrame(rows)
-    long["role"] = role
-    wide = long[long.metric == "pu_auc"].pivot(index="repo", columns="approach", values="value")
-    tests = {}
-    for base in ("keyword", "whitespace_only", "random"):
-        tests[base] = paired(wide["full"], wide[base])
-    adj = holm([tests[b]["p"] for b in tests])
-    for b, a in zip(tests, adj):
-        tests[b]["p_holm"] = a
-    abl = {a: paired(wide["full"], wide[a]) for a in ("no_keywords", "no_content")}
-    lay = long[long.metric == "pu_auc_layout"].pivot(index="repo", columns="approach", values="value")
-    return long, {"repos": int(wide.shape[0]), "failed_commits": failed, "threshold": threshold,
-                  "means": {a: boot_ci(wide[a], seed_for("ci", a)) for a in wide.columns},
-                  "medians": {a: float(wide[a].median()) for a in wide.columns},
-                  "tests": tests, "ablations": abl,
-                  "layout_medians": {a: float(lay[a].median()) for a in lay.columns},
-                  "layout_test_keyword": paired(lay["full"], lay["keyword"]),
-                  "recall": boot_ci(long[long.metric == "recall_at_threshold"].value, seed_for("ci", "recall")),
-                  "flagged": boot_ci(long[long.metric == "flagged_unlabeled"].value, seed_for("ci", "flag"))}
+
+    def wide(metric):
+        return long[long.metric == metric].pivot(index="repo", columns="approach", values="value")
+
+    res = {"threshold": threshold}
+    for metric in ("matched_pu_auc", "uniform_pu_auc", "matched_pu_auc_layout"):
+        w = wide(metric)
+        tests = {b: paired(w["full"], w[b]) for b in ("keyword", "size_lines", "size_files", "whitespace_only", "random")}
+        for b, a in zip(tests, holm([tests[b]["p"] for b in tests])):
+            tests[b]["p_holm"] = a
+        res[metric] = {"repos": int(w["full"].notna().sum()),
+                       "medians": {a: float(w[a].median()) for a in w.columns},
+                       "means": {a: boot_ci(w[a], seed_for("ci", metric, a)) for a in w.columns},
+                       "tests": tests,
+                       "ablations": {a: paired(w["full"], w[a]) for a in ("no_keywords", "no_content", "no_size") if a in w}}
+    res["recall"] = boot_ci(long[long.metric == "recall_at_threshold"].value, seed_for("ci", "recall"))
+    res["flagged"] = boot_ci(long[long.metric == "flagged_uniform_unlabeled"].value, seed_for("ci", "flag"))
+    return long, res
 
 
 def load_lanes(d):
@@ -178,6 +175,7 @@ def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--role", choices=["development", "final"], required=True)
     ap.add_argument("--features", required=True)
+    ap.add_argument("--matched-features", required=True)
     ap.add_argument("--split", required=True)
     ap.add_argument("--models", required=True)
     ap.add_argument("--rq6", default="")
@@ -186,7 +184,7 @@ def main() -> None:
     args = ap.parse_args()
     out = Path(args.out)
     out.mkdir(parents=True, exist_ok=True)
-    long5, s5 = rq5(args.features, args.split, args.models, args.role)
+    long5, s5 = rq5(args.features, args.matched_features, args.split, args.models, args.role)
     long5.to_csv(out / "rq5_repo.csv", index=False)
     result = {"role": args.role, "rq5": s5}
     if args.rq6:
