@@ -1,0 +1,26 @@
+{
+  "development_repos": 244,
+  "commits": 100358,
+  "failed_commits": 0,
+  "positives": 2814,
+  "chosen": {
+    "kind": "hgb",
+    "params": {
+      "learning_rate": 0.05,
+      "max_leaf_nodes": 31
+    },
+    "median_pu_auc": 0.9976857923497268
+  },
+  "threshold": 0.9132678774310478,
+  "flag_rate": 0.01,
+  "dev_oof_recall_at_threshold": 0.505685856432125,
+  "baseline_median_pu_auc": {
+    "keyword": 0.9320192307692308,
+    "whitespace_only": 0.49875,
+    "random": 0.5010143442622951
+  },
+  "ablation_median_pu_auc": {
+    "no_keywords": 0.9975,
+    "no_content": 0.9964204545454545
+  }
+}
