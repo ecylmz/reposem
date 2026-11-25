@@ -47,3 +47,7 @@ Reason: the user approved D-003, the rules of RQ5 to RQ7, the 60/40 split, and t
 Decided by: the user.
 Effect: the protocol is fixed. Later changes need an entry.
 Commit: tag `phase/protocol`.
+
+2026-11-25 decision: keyword features and the keyword baseline read the commit subject only, as the RQ1 category rule does. No results seen.
+2026-11-25 run note: results/features failed to start because macOS has no `timeout` binary. results/features-2 reran the same configuration without the wrapper (167,144 commits, 0 failed).
+2026-11-25 data: pools hold 5,014 positives (63 declared commits are merges or roots and are left out) and 162,130 unlabeled commits. Split: 244 development and 162 final repositories.
