@@ -1,6 +1,6 @@
 # Study protocol: detecting commits that blame should ignore
 
-Status: approved on 2026-11-25 (D-004, tag `phase/protocol`). Every later change goes through `decisions.md`.
+Status: approved on 2026-11-25 (D-004, tag `phase/protocol`). Amended by D-005 (size baseline and size-matched RQ5 measure). Every later change goes through `decisions.md`.
 
 Source: the conversation of 2026-11-25. The user asked for a new technique that gives the study a concrete "so what" contribution, without any human validation step. This protocol extends the published study (Zenodo v1.0.0, RQ1 to RQ4). It does not change RQ1 to RQ4.
 

@@ -51,3 +51,14 @@ Commit: tag `phase/protocol`.
 2026-11-25 decision: keyword features and the keyword baseline read the commit subject only, as the RQ1 category rule does. No results seen.
 2026-11-25 run note: results/features failed to start because macOS has no `timeout` binary. results/features-2 reran the same configuration without the wrapper (167,144 commits, 0 failed).
 2026-11-25 data: pools hold 5,014 positives (63 declared commits are merges or roots and are left out) and 162,130 unlabeled commits. Split: 244 development and 162 final repositories.
+
+## D-005, 2026-11-26: size baseline and size-matched evaluation for RQ5
+
+Type: deviation
+Phase: method
+Seen results: development results of run results/develop (244 development repositories). Chosen model median per-repository PU-AUC 0.998 (out-of-fold). A size rule alone (log of changed files) gives 0.988, log of changed lines 0.964, keyword rule 0.932. No final result seen.
+Change: the protocol had no size baseline and used PU-AUC against uniformly drawn unlabeled commits. The study now (1) adds two size baselines (changed lines, changed files); (2) makes size-matched PU-AUC the primary RQ5 measure: each declared commit is compared with up to 3 unlabeled commits of the same repository and the same size bin (floor of log2 of changed lines plus one); (3) adds these matched commits to the development training data and chooses the model by median size-matched PU-AUC. The uniform PU-AUC stays as a secondary measure. The threshold still flags 1% of the uniformly drawn unlabeled commits. The RQ5 Holm family now holds five baselines.
+Reason: against uniformly drawn commits, commit size separates declared commits almost perfectly, so the planned measure hits its ceiling and cannot show what the detector adds.
+Decided by: proposed by Claude, approved by the user.
+Effect: RQ5 changes its primary measure and its comparators before the final data is opened. RQ6 and RQ7 do not change. The development run results/develop stays as the record of the first design.
+Commit: see the next commit.
