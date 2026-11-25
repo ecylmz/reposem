@@ -1,0 +1,29 @@
+{
+  "command": [
+    ".venv/bin/python",
+    "src/develop_matched.py",
+    "--features",
+    "results/features-2/features.csv",
+    "--matched-features",
+    "results/matched-features/features.csv",
+    "--split",
+    "results/pools/split.csv",
+    "--out",
+    "results/develop-matched"
+  ],
+  "cwd": "detector",
+  "git_commit": "b4eb6d6c6ac5ca78f5f304ffbdcd8a9ed8d96943",
+  "git_dirty": false,
+  "git_changes": [],
+  "inputs": {
+    "results/features-2/features.csv": "44c549b22bbfbbf36c8888903d524cb6d2b1b9a51b032e33265e43afe5d75f4e",
+    "results/matched-features/features.csv": "c8befcc6d27aa52389cbf1e66ece427f7f3946f1ce57389b39146fda6a9f196a",
+    "results/pools/split.csv": "2a3fd7cbfe5a50e61b8fc3c2cafa472731d830a2f09ca30a18c145aa7eb32425",
+    "configs/detector.json": "bcb57ad9ee34687bc84debe2158ae6599ab9ba3de0d16bd03b4742610e549905"
+  },
+  "platform": "macOS-15.7.4-arm64-arm-64bit-Mach-O",
+  "start": "2026-11-25T22:33:46+00:00",
+  "status": "failed",
+  "end": "2026-11-25T22:33:46+00:00",
+  "exit_code": 1
+}
