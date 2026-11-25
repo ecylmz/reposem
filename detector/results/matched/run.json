@@ -1,0 +1,23 @@
+{
+  "command": [
+    ".venv/bin/python",
+    "src/matched_pool.py",
+    "--pools",
+    "results/pools/pools.csv",
+    "--out",
+    "results/matched"
+  ],
+  "cwd": "detector",
+  "git_commit": "0892536087d4a0b161708daf8da46db94f2d7764",
+  "git_dirty": false,
+  "git_changes": [],
+  "inputs": {
+    "results/pools/pools.csv": "1c4e6eaa717a59a09d3cd3cf76d5a698e823344fb3d05336f108a9345fe3ad07",
+    "configs/detector.json": "bcb57ad9ee34687bc84debe2158ae6599ab9ba3de0d16bd03b4742610e549905"
+  },
+  "platform": "macOS-15.7.4-arm64-arm-64bit-Mach-O",
+  "start": "2026-11-25T21:21:14+00:00",
+  "status": "ok",
+  "end": "2026-11-25T22:27:59+00:00",
+  "exit_code": 0
+}
