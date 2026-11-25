@@ -1,0 +1,99 @@
+{
+  "development_repos": 244,
+  "rows": 108244,
+  "positives": 2814,
+  "matched_rows": 8235,
+  "chosen": {
+    "kind": "hgb",
+    "params": {
+      "learning_rate": 0.05,
+      "max_leaf_nodes": 15
+    },
+    "median_matched_pu_auc": 1.0
+  },
+  "selection": [
+    {
+      "kind": "logreg",
+      "params": {
+        "C": 0.1
+      },
+      "median_matched_pu_auc": 0.9792948077685295,
+      "median_uniform_pu_auc": 0.9950000000000001
+    },
+    {
+      "kind": "logreg",
+      "params": {
+        "C": 1.0
+      },
+      "median_matched_pu_auc": 0.9798726714229092,
+      "median_uniform_pu_auc": 0.9950000000000001
+    },
+    {
+      "kind": "logreg",
+      "params": {
+        "C": 10.0
+      },
+      "median_matched_pu_auc": 0.9798726714229092,
+      "median_uniform_pu_auc": 0.9950000000000001
+    },
+    {
+      "kind": "hgb",
+      "params": {
+        "learning_rate": 0.05,
+        "max_leaf_nodes": 15
+      },
+      "median_matched_pu_auc": 1.0,
+      "median_uniform_pu_auc": 0.9974999999999999
+    },
+    {
+      "kind": "hgb",
+      "params": {
+        "learning_rate": 0.05,
+        "max_leaf_nodes": 31
+      },
+      "median_matched_pu_auc": 1.0,
+      "median_uniform_pu_auc": 0.9974999999999999
+    },
+    {
+      "kind": "hgb",
+      "params": {
+        "learning_rate": 0.1,
+        "max_leaf_nodes": 15
+      },
+      "median_matched_pu_auc": 1.0,
+      "median_uniform_pu_auc": 0.9972456896551725
+    },
+    {
+      "kind": "hgb",
+      "params": {
+        "learning_rate": 0.1,
+        "max_leaf_nodes": 31
+      },
+      "median_matched_pu_auc": 1.0,
+      "median_uniform_pu_auc": 0.9974999999999999
+    }
+  ],
+  "threshold": 0.8972215572943543,
+  "flag_rate": 0.01,
+  "dev_oof_recall_at_threshold": 0.505685856432125,
+  "median_matched_pu_auc": {
+    "keyword": 0.9004830917874396,
+    "size_lines": 0.5157326101928374,
+    "size_files": 0.7509259259259259,
+    "whitespace_only": 0.5,
+    "random": 0.48232409107740676,
+    "ablation:no_keywords": 0.9777236652236652,
+    "ablation:no_content": 0.9760561342592593,
+    "ablation:no_size": 0.9988425925925926
+  },
+  "median_uniform_pu_auc": {
+    "keyword": 0.9320192307692308,
+    "size_lines": 0.9643221153846154,
+    "size_files": 0.9877083333333333,
+    "whitespace_only": 0.49875,
+    "random": 0.49213065262076056,
+    "ablation:no_keywords": 0.9967708333333334,
+    "ablation:no_content": 0.995,
+    "ablation:no_size": 0.9948303571428572
+  }
+}

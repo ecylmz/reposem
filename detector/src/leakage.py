@@ -84,6 +84,10 @@ def main() -> None:
     dev = set(allf.loc[allf.role == "development", "sha"])
     fin = set(allf.loc[allf.role == "final", "sha"])
     res["sha_overlap_dev_final"] = len(dev & fin)
+    d = allf[allf.role == "development"].drop_duplicates(["repo", "sha"])
+    res["sha_in_several_dev_repos"] = int((d.groupby("sha").repo.nunique() > 1).sum())
+    pos = df[df.label == 1]
+    res["positive_sha_in_several_dev_repos"] = int((pos.groupby("sha").repo.nunique() > 1).sum())
     (out / "leakage.json").write_text(json.dumps(res, indent=2))
     print(json.dumps(res, indent=2))
 
