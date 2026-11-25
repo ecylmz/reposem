@@ -36,3 +36,14 @@ Reason: `protocol.md` is ready for approval.
 Decided by: proposed by Claude.
 Effect: approval pending. The open questions are the RQ rules, the 60/40 split, and the compute budget of about 10 hours with no money.
 Commit: see the tag `phase/protocol`.
+
+## D-004, 2026-11-25: protocol approved
+
+Type: approval
+Phase: protocol
+Seen results: none for the detector.
+Change: none.
+Reason: the user approved D-003, the rules of RQ5 to RQ7, the 60/40 split, and the compute budget of about 10 hours and 40 GB, with no money.
+Decided by: the user.
+Effect: the protocol is fixed. Later changes need an entry.
+Commit: tag `phase/protocol`.

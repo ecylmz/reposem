@@ -1,0 +1,14 @@
+{
+  "clones_dir": "/Volumes/kioxia/research/ecylmz/reposem/lean/clones",
+  "study_dir": "data/study",
+  "declared_csv": "data/analysis/declared_revisions.csv",
+  "master_seed": 20261125,
+  "pool_unlabeled_per_repo": 400,
+  "final_fraction": 0.4,
+  "flag_rate": 0.01,
+  "cv_folds": 5,
+  "bootstrap": 5000,
+  "rq7_sample": 150,
+  "git": "/opt/homebrew/bin/git",
+  "workers": 8
+}
