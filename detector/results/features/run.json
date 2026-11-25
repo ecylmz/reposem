@@ -1,0 +1,27 @@
+{
+  "command": [
+    "timeout",
+    "14400",
+    ".venv/bin/python",
+    "src/features.py",
+    "--pool",
+    "results/pools/pools.csv",
+    "--out",
+    "results/features"
+  ],
+  "cwd": "detector",
+  "git_commit": "ea00558743ac34d975515e655df3e13f024ec722",
+  "git_dirty": false,
+  "git_changes": [],
+  "inputs": {
+    "results/pools/pools.csv": "1c4e6eaa717a59a09d3cd3cf76d5a698e823344fb3d05336f108a9345fe3ad07",
+    "configs/detector.json": "bcb57ad9ee34687bc84debe2158ae6599ab9ba3de0d16bd03b4742610e549905",
+    "requirements.txt": "a8d04a80b8abae3101e598807feb2f7a903a678fb789cfd46f1bc974013e6b72"
+  },
+  "platform": "macOS-15.7.4-arm64-arm-64bit-Mach-O",
+  "start": "2026-11-25T20:46:07+00:00",
+  "status": "not-started",
+  "end": "2026-11-25T20:46:07+00:00",
+  "exit_code": 127,
+  "error": "[Errno 2] No such file or directory: 'timeout'"
+}
