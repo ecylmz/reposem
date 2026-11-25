@@ -80,3 +80,14 @@ Reason: (1) removes a leak through shared history; (2) and (3) write down how th
 Decided by: proposed by Claude; part of the freeze approval.
 Effect: about 30 commits fewer in the final RQ5 data. No other change.
 Commit: see the tag `analysis-freeze`.
+
+## D-007, 2026-11-26: analysis freeze checkpoint
+
+Type: checkpoint
+Phase: freeze
+Seen results: development results only (see the run notes and D-006).
+Change: none.
+Reason: code, configurations, seeds, model (results/develop-matched-2), threshold, and the analysis scripts are frozen. The pipeline ran end to end on development data (scratch): lanes in rq6 and rq7 mode on development repositories, analyze.py, paper_numbers.py, make-numbers.py.
+Decided by: proposed by Claude.
+Effect: approval pending. After approval, the final evaluation runs once: make reproduce (RQ6 lanes on 162 final repositories, RQ7 lanes on 150 repositories, then make numbers). Estimate: 2 to 4 hours of compute, no money, no new disk.
+Commit: a678b75923d3d5856e07815a3c24cc3972ce749a (tag analysis-freeze).
