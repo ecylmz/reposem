@@ -1,0 +1,29 @@
+{
+  "command": [
+    ".venv/bin/python",
+    "src/leakage.py",
+    "--features",
+    "results/features-2/features.csv",
+    "--matched-features",
+    "results/matched-features/features.csv",
+    "--split",
+    "results/pools/split.csv",
+    "--develop",
+    "results/develop-matched-2",
+    "--out",
+    "results/leakage"
+  ],
+  "cwd": "detector",
+  "git_commit": "6a61532cbbf5a70f32b1caa85bf8fd284ce56207",
+  "git_dirty": false,
+  "git_changes": [],
+  "inputs": {
+    "results/develop-matched-2/summary.json": "9beb91e231ed670305b285de0987a78562251f800fe9e48d044da046c03cbd88",
+    "configs/detector.json": "bcb57ad9ee34687bc84debe2158ae6599ab9ba3de0d16bd03b4742610e549905"
+  },
+  "platform": "macOS-15.7.4-arm64-arm-64bit-Mach-O",
+  "start": "2026-11-25T22:35:24+00:00",
+  "status": "ok",
+  "end": "2026-11-25T22:35:43+00:00",
+  "exit_code": 0
+}

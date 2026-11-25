@@ -53,6 +53,14 @@ def rq5(features, matched_features, split, models_dir, role):
     from develop_matched import baselines, combined, repo_measures
 
     df, pairs = combined(features, matched_features, split, role)
+    dropped = 0
+    if role == "final":
+        # Commits that also occur in development repositories (shared history) were training data: drop them.
+        dev_df, _ = combined(features, matched_features, split, "development")
+        seen = set(dev_df.sha)
+        dropped = int(df.sha.isin(seen).sum())
+        df = df[~df.sha.isin(seen)].reset_index(drop=True)
+        pairs = pairs[~pairs.sha.isin(seen) & ~pairs.matched_to.isin(seen)]
     with open(Path(models_dir) / "models.pkl", "rb") as f:
         models = pickle.load(f)
     threshold = json.loads((Path(models_dir) / "summary.json").read_text())["threshold"]
@@ -81,7 +89,8 @@ def rq5(features, matched_features, split, models_dir, role):
     def wide(metric):
         return long[long.metric == metric].pivot(index="repo", columns="approach", values="value")
 
-    res = {"threshold": threshold}
+    res = {"threshold": threshold, "dropped_shared_commits": dropped, "rows": int(len(df)),
+           "positives": int(df.label.sum()), "matched_rows": int(len(pairs))}
     for metric in ("matched_pu_auc", "uniform_pu_auc", "matched_pu_auc_layout"):
         w = wide(metric)
         tests = {b: paired(w["full"], w[b]) for b in ("keyword", "size_lines", "size_files", "whitespace_only", "random")}
@@ -92,6 +101,12 @@ def rq5(features, matched_features, split, models_dir, role):
                        "means": {a: boot_ci(w[a], seed_for("ci", metric, a)) for a in w.columns},
                        "tests": tests,
                        "ablations": {a: paired(w["full"], w[a]) for a in ("no_keywords", "no_content", "no_size") if a in w}}
+    # Protocol rule (D-005): full model against the best baseline on the primary measure.
+    prim = res["matched_pu_auc"]
+    best = max(("keyword", "size_lines", "size_files", "whitespace_only", "random"), key=lambda b: prim["medians"][b])
+    t = prim["tests"][best]
+    res["verdict"] = {"best_baseline": best, "median_diff": t["median_diff"], "p_holm": t["p_holm"],
+                      "met": bool(t["median_diff"] >= 0.05 and t["p_holm"] < 0.05)}
     res["recall"] = boot_ci(long[long.metric == "recall_at_threshold"].value, seed_for("ci", "recall"))
     res["flagged"] = boot_ci(long[long.metric == "flagged_uniform_unlabeled"].value, seed_for("ci", "flag"))
     return long, res
@@ -138,7 +153,9 @@ def rq6(lanes_dir):
     adj = holm([v["p"] for v in tests.values()])
     for k, a in zip(tests, adj):
         tests[k]["p_holm"] = a
-    summary = {"status": status, "repos": int(len(t)), "repos_with_reattributed": int(len(rec)),
+    verdict = {k: bool(tests[k]["median_diff"] >= 0.10 and tests[k]["p_holm"] < 0.05) for k in ("recovery_vs_W", "recovery_vs_WMC")}
+    verdict.update({k: bool(tests[k]["median_diff"] <= -0.02 and tests[k]["p_holm"] < 0.05) for k in ("reassign_vs_W", "reassign_vs_WMC")})
+    summary = {"status": status, "verdict": verdict, "repos": int(len(t)), "repos_with_reattributed": int(len(rec)),
                "means": {c: boot_ci(t[c], seed_for("ci6", c)) for c in t.columns if c.startswith(("recovery_", "reassign_", "owner_vs_decl_", "random_owner"))},
                "tests": tests,
                "detected_median": float(t.detected.median()), "detected_share_of_candidates": float((t.detected / t.candidates.replace(0, np.nan)).median()),

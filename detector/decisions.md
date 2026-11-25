@@ -65,3 +65,18 @@ Commit: see the next commit.
 
 2026-11-26 data: RQ7 sample of 150 repositories drawn from 11,245 no-file candidates (209 checked, 45 below 200 commits, 14 below 10 mentionable users, 0 clone failures). Commit and contributor counts come from the GitHub API on 2026-11-26, not on the frame date; the analyzed revision is the default-branch revision of 2026-10-01.
 2026-11-26 run note: results/develop-matched failed at import because src/numbers.py shadowed the standard library module numbers. The file is now src/paper_numbers.py. results/develop-matched-2 reruns the same configuration.
+
+2026-11-26 run note: results/develop-matched-2 (D-005 design, 244 development repositories, 2,814 positives, 8,235 matched rows). The four HGB configurations tie at a median size-matched PU-AUC of 1.000. The rule takes the first maximum in grid order: HGB, learning rate 0.05, 15 leaf nodes. Threshold 0.897 (1% of uniform unlabeled commits, out-of-fold), out-of-fold recall at the threshold 0.506. Development medians of size-matched PU-AUC: keyword 0.900, changed files 0.751, changed lines 0.516, whitespace-only 0.500, random 0.482. Ablations: no keywords 0.978, no content 0.976, no size 0.999.
+
+2026-11-26 run note: results/leakage. Label shuffle within repositories gives a median size-matched PU-AUC of 0.617 (uniform 0.820), against 1.000 for the true labels. The excess over 0.5 comes from repository composition: repositories with many declared commits also contribute many matched commits of the same size, so a shuffled model still learns repository-level size and style. Permutation importance ranks token-preserving diff, the lint and formatter keywords, alphanumeric equality, and whitespace-preserving diff first. Size features add almost nothing. Counts only: 30 commit ids occur in both development and final repositories, and 34 positive commit ids occur in more than one development repository (shared history).
+
+## D-006, 2026-11-26: shared commits and the RQ5 rule in the analysis script
+
+Type: deviation
+Phase: method
+Seen results: development results of results/develop-matched-2 and results/leakage. No final result seen; the overlap count reads commit ids only.
+Change: (1) RQ5 on final repositories drops every commit id that also occurs in the development data (30 ids), because those commits were training data. (2) The RQ5 rule compares the detector with the best of the five baselines by median size-matched PU-AUC (D-005 extended the comparators; the margin 0.05 and the Holm-adjusted p below 0.05 stay). (3) RQ6 reassignment rule: the median paired difference (detected minus heuristic) is at most -0.02, against W and against WMC.
+Reason: (1) removes a leak through shared history; (2) and (3) write down how the script applies the protocol rules.
+Decided by: proposed by Claude; part of the freeze approval.
+Effect: about 30 commits fewer in the final RQ5 data. No other change.
+Commit: see the tag `analysis-freeze`.

@@ -1,0 +1,36 @@
+{
+  "chosen": {
+    "kind": "hgb",
+    "params": {
+      "learning_rate": 0.05,
+      "max_leaf_nodes": 15
+    },
+    "median_matched_pu_auc": 1.0
+  },
+  "shuffle_median_matched_pu_auc": 0.6173345805119524,
+  "shuffle_median_uniform_pu_auc": 0.8204166666666667,
+  "pooled_matched_auc": 0.870886568113548,
+  "permutation_importance": {
+    "tok_pres": 0.0503548481894458,
+    "kw_lint": 0.02285886035172391,
+    "kw_formatter": 0.020671449759615546,
+    "alnum_eq": 0.018799898503837897,
+    "ws_pres": 0.01751527297159805,
+    "kw_refactoring": 0.008322404803116079,
+    "kw_style": 0.005440466157373369,
+    "balance": 0.0047351498211950505,
+    "cfg_change": 0.004498303866218523,
+    "net_ratio": 0.003497410164892467,
+    "bot": 0.002677047583662051,
+    "log_files": 0.0023815133716447168,
+    "kw_whitespace": 0.0020286502261871453,
+    "kw_license": 0.0009722184463234473,
+    "ws_only": 9.515265204096401e-06,
+    "kw_move": -0.0003435420693391755,
+    "kw_migration": -0.000981259027095338,
+    "log_lines": -0.0012471038855509375
+  },
+  "sha_overlap_dev_final": 30,
+  "sha_in_several_dev_repos": 56,
+  "positive_sha_in_several_dev_repos": 34
+}
