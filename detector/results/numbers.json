@@ -688,5 +688,74 @@
  "DetSevenDetectedMedian": {
   "value": 2.0,
   "digits": 3
+ },
+ "DetPoolRepos": 406,
+ "DetPositives": {
+  "latex": "5{,}014"
+ },
+ "DetMergeRoot": 63,
+ "DetUnlabeled": {
+  "latex": "162{,}130"
+ },
+ "DetDevRepos": 244,
+ "DetFinalRepos": 162,
+ "DetMatchedCommits": {
+  "latex": "14{,}683"
+ },
+ "DetMatchedShort": 359,
+ "DetDevPositives": {
+  "latex": "2{,}814"
+ },
+ "DetDevMatchedRows": {
+  "latex": "8{,}235"
+ },
+ "DetDevRecall": {
+  "value": 50.568586,
+  "digits": 1
+ },
+ "DetDevMatchedKeyword": {
+  "value": 0.900483,
+  "digits": 3
+ },
+ "DetDevMatchedSizeLines": {
+  "value": 0.515733,
+  "digits": 3
+ },
+ "DetDevMatchedSizeFiles": {
+  "value": 0.750926,
+  "digits": 3
+ },
+ "DetDevMatchedWhitespace": {
+  "value": 0.5,
+  "digits": 3
+ },
+ "DetDevMatchedRandom": {
+  "value": 0.482324,
+  "digits": 3
+ },
+ "DetDevMatchedFull": {
+  "value": 1.0,
+  "digits": 3
+ },
+ "DetDevLogregBest": {
+  "value": 0.979873,
+  "digits": 3
+ },
+ "DetShuffleMatched": {
+  "value": 0.617335,
+  "digits": 3
+ },
+ "DetSharedCommits": 30,
+ "DetSevenCandidates": {
+  "latex": "11{,}245"
+ },
+ "DetSevenChecked": 209,
+ "DetSevenExclCommits": 45,
+ "DetSevenExclContrib": 14,
+ "DetFinalPositives": {
+  "latex": "2{,}190"
+ },
+ "DetFinalMatchedRows": {
+  "latex": "6{,}421"
  }
 }

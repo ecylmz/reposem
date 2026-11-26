@@ -75,6 +75,30 @@ def main(src, dst):
             n[f"DetSeven{tag}"], n[f"DetSeven{tag}Lo"], n[f"DetSeven{tag}Hi"] = pct(mean), pct(lo), pct(hi)
         n["DetSevenShareWithDetected"] = pct(r7["share_repos_with_detected"])
         n["DetSevenDetectedMedian"] = r3(r7["detected_median"])
+    # Descriptive counts and development facts from the other result files of the package.
+    res = Path(src).resolve().parents[1]
+    pools = json.loads((res / "pools/counts.json").read_text())
+    n["DetPoolRepos"], n["DetPositives"], n["DetMergeRoot"] = pools["repos"], pools["positives"], pools["positives_merge_or_root"]
+    n["DetUnlabeled"], n["DetDevRepos"], n["DetFinalRepos"] = pools["unlabeled"], pools["development_repos"], pools["final_repos"]
+    m = json.loads((res / "matched/counts.json").read_text())
+    n["DetMatchedCommits"], n["DetMatchedShort"] = m["matched"], m["short"]
+    dev = json.loads((res / "develop-matched-2/summary.json").read_text())
+    n["DetDevPositives"], n["DetDevMatchedRows"] = dev["positives"], dev["matched_rows"]
+    n["DetDevRecall"] = pct(dev["dev_oof_recall_at_threshold"])
+    for appr, v in dev["median_matched_pu_auc"].items():
+        if appr in NAMES:
+            n[f"DetDevMatched{NAMES[appr]}"] = r3(v)
+    n["DetDevMatchedFull"] = r3(dev["chosen"]["median_matched_pu_auc"])
+    n["DetDevLogregBest"] = r3(max(x["median_matched_pu_auc"] for x in dev["selection"] if x["kind"] == "logreg"))
+    lk = json.loads((res / "leakage/leakage.json").read_text())
+    n["DetShuffleMatched"] = r3(lk["shuffle_median_matched_pu_auc"])
+    n["DetSharedCommits"] = lk["sha_overlap_dev_final"]
+    f7 = json.loads((res / "rq7-frame/counts.json").read_text())
+    n["DetSevenCandidates"], n["DetSevenChecked"] = f7["candidates"], f7["checked"]
+    n["DetSevenExclCommits"], n["DetSevenExclContrib"] = f7["excluded_commits"], f7["excluded_contributors"]
+    n["DetFinalPositives"], n["DetFinalMatchedRows"] = r5["positives"], r5["matched_rows"]
+    # Integers of 1,000 or more use the thousands separator of the article.
+    n = {k: ({"latex": f"{v:,}".replace(",", "{,}")} if type(v) is int and v >= 1000 else v) for k, v in n.items()}
     Path(dst).write_text(json.dumps(n, indent=1))
     print(f"{len(n)} values written to {dst}")
 
