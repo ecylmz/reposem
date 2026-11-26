@@ -140,6 +140,15 @@ def main(src, dst):
             n[f"DetXListFlagged{lt}"] = {"value": e["median_flagged"][lst], "digits": 0 if float(e["median_flagged"][lst]).is_integer() else 1}
             n[f"DetXListRecall{lt}"] = pct(e["recall_in_candidates"][lst])
             n[f"DetXListPrecision{lt}"] = pct(e["precision_vs_declared"][lst])
+    x6t = res / "exploratory/rq6-lists-tests/tests.json"
+    if x6t.exists():
+        e = json.loads(x6t.read_text())
+        for k, v in e.items():
+            tag = "DetXList" + letters(k.lower().replace("keyword", "Keyword").replace("size", "Size"))
+            n[tag + "MeanDiff"] = pct(v["mean_diff"])
+            n[tag + "Diff"] = pct(v["median_diff"])
+            n[tag + "R"] = r3(v["r"])
+            n[tag + "P"] = pval(v["p_holm"])
     # Integers of 1,000 or more use the thousands separator of the article.
     n = {k: ({"latex": f"{v:,}".replace(",", "{,}")} if type(v) is int and v >= 1000 else v) for k, v in n.items()}
     Path(dst).write_text(json.dumps(n, indent=1))

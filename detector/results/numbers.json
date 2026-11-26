@@ -1010,5 +1010,129 @@
  "DetXSevenFlagShare": {
   "value": 1.61633,
   "digits": 1
+ },
+ "DetXListRepos": 162,
+ "DetXSizeCutLines": {
+  "latex": "5{,}180"
+ },
+ "DetXListRecoveryDetected": {
+  "value": 81.149614,
+  "digits": 1
+ },
+ "DetXListReassignDetected": {
+  "value": 3.735942,
+  "digits": 1
+ },
+ "DetXListFlaggedDetected": {
+  "value": 21.0,
+  "digits": 0
+ },
+ "DetXListRecallDetected": {
+  "value": 75.062344,
+  "digits": 1
+ },
+ "DetXListPrecisionDetected": {
+  "value": 12.300776,
+  "digits": 1
+ },
+ "DetXListRecoveryKeyword": {
+  "value": 66.557462,
+  "digits": 1
+ },
+ "DetXListReassignKeyword": {
+  "value": 4.100585,
+  "digits": 1
+ },
+ "DetXListFlaggedKeyword": {
+  "value": 39.0,
+  "digits": 0
+ },
+ "DetXListRecallKeyword": {
+  "value": 66.957606,
+  "digits": 1
+ },
+ "DetXListPrecisionKeyword": {
+  "value": 5.502613,
+  "digits": 1
+ },
+ "DetXListRecoverySize": {
+  "value": 56.901585,
+  "digits": 1
+ },
+ "DetXListReassignSize": {
+  "value": 3.867196,
+  "digits": 1
+ },
+ "DetXListFlaggedSize": {
+  "value": 16.0,
+  "digits": 0
+ },
+ "DetXListRecallSize": {
+  "value": 37.65586,
+  "digits": 1
+ },
+ "DetXListPrecisionSize": {
+  "value": 8.242358,
+  "digits": 1
+ },
+ "DetXListRecoveryVsKeywordMeanDiff": {
+  "value": 14.592152,
+  "digits": 1
+ },
+ "DetXListRecoveryVsKeywordDiff": {
+  "value": 1.203266,
+  "digits": 1
+ },
+ "DetXListRecoveryVsKeywordR": {
+  "value": 0.626473,
+  "digits": 3
+ },
+ "DetXListRecoveryVsKeywordP": {
+  "latex": "$p < 0.001$"
+ },
+ "DetXListReassignVsKeywordMeanDiff": {
+  "value": -0.364643,
+  "digits": 1
+ },
+ "DetXListReassignVsKeywordDiff": {
+  "value": -0.130599,
+  "digits": 1
+ },
+ "DetXListReassignVsKeywordR": {
+  "value": -0.133597,
+  "digits": 3
+ },
+ "DetXListReassignVsKeywordP": {
+  "latex": "$p = 0.293$"
+ },
+ "DetXListRecoveryVsSizeMeanDiff": {
+  "value": 24.248028,
+  "digits": 1
+ },
+ "DetXListRecoveryVsSizeDiff": {
+  "value": 5.797101,
+  "digits": 1
+ },
+ "DetXListRecoveryVsSizeR": {
+  "value": 0.739746,
+  "digits": 3
+ },
+ "DetXListRecoveryVsSizeP": {
+  "latex": "$p < 0.001$"
+ },
+ "DetXListReassignVsSizeMeanDiff": {
+  "value": -0.131254,
+  "digits": 1
+ },
+ "DetXListReassignVsSizeDiff": {
+  "value": 0.094454,
+  "digits": 1
+ },
+ "DetXListReassignVsSizeR": {
+  "value": 0.04816,
+  "digits": 3
+ },
+ "DetXListReassignVsSizeP": {
+  "latex": "$p = 0.607$"
  }
 }

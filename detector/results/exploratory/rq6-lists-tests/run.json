@@ -1,0 +1,19 @@
+{
+  "command": [
+    "sh",
+    "-c",
+    "cd src && ../.venv/bin/python exploratory_rq6_tests.py ../results/exploratory/rq6-lists/exploratory_rq6.csv ../results/exploratory/rq6-lists-tests/tests.json"
+  ],
+  "cwd": "detector",
+  "git_commit": "74cbef9ea76077130aa5ca99ea0c97ad47520186",
+  "git_dirty": false,
+  "git_changes": [],
+  "inputs": {
+    "results/exploratory/rq6-lists/exploratory_rq6.csv": "6f2bc5cf72c54fd71c203f26a31a15a43474585bec6a8cc33b25bfa9b77968e1"
+  },
+  "platform": "macOS-15.7.4-arm64-arm-64bit-Mach-O",
+  "start": "2026-11-26T07:49:51+00:00",
+  "status": "ok",
+  "end": "2026-11-26T07:49:51+00:00",
+  "exit_code": 0
+}
