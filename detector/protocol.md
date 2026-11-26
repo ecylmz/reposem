@@ -10,8 +10,8 @@ Prior exposure: RQ1 to RQ4 results are known for all 406 repositories with an ef
 
 - Problem (decided): only 3.9% of popular repositories declare the commits that blame must skip. Tools and studies have no correction for the other 96%.
 - Paper type (decided): empirical study extended with a technique. The technique is a detector that recommends an ignore list for a repository without one.
-- Target venue (decided by the user): Science of Computer Programming, research paper. LaTeX source accepted, no page limit. Rules are in `../../reposem/submission/scp/rules/`.
-- Contribution type (proposed): a technique with an evaluation, plus the existing census. Of the 20 most recent SCP research papers, 9 present a technique or tool with an evaluation.
+- Target venue: a journal research paper (the venue is recorded outside this package).
+- Contribution type (proposed): a technique with an evaluation, plus the existing census.
 - Nearest prior work (proposed): DiffCat detects non-essential changes in Java (Kawrykow and Robillard, 2011). AG-SZZ skips cosmetic lines (Kim et al., 2006). Refactoring detectors find refactorings (Tsantalis et al., 2018). This detector differs in four ways. It works on commits in any language. It learns from labels that projects wrote themselves. Its output is an ignore list for blame. Its evaluation measures the effect on attribution, not only on classification.
 - Literature base (decided): 63 peer-reviewed references now. The target stays at 50 or more.
 
