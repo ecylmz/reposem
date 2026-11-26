@@ -46,6 +46,8 @@ The planned analyses are RQ5 (detection on 162 held-out repositories, primary me
 | RQ5 checks (pooled measures, logistic regression, subsets, flag rates, content of flagged commits, label shuffles) | exploratory | `detector/results/exploratory/rq5-checks/summary.json` | `\DetX*` |
 | RQ6 with keyword and size lists | exploratory | `detector/results/exploratory/rq6-lists/`, `rq6-lists-tests/tests.json` | `\DetXList*` |
 
+To suggest an ignore file for another repository with the frozen detector, run `python src/suggest.py /path/to/repo > .git-blame-ignore-revs` in `detector/` with the packages of `detector/requirements.txt`. The script prints each flagged commit with its date, author, and subject as a comment. Review the list before you commit it.
+
 To rebuild the RQ5 to RQ7 numbers from the deposited result files, run `make numbers` in `detector/` (minutes; needs only the files in this package). `make reproduce` reruns the blame lanes of the final evaluation. It needs the clones of the 162 final and 150 RQ7 repositories (about 140 GB) and takes several hours.
 
 ## Privacy
