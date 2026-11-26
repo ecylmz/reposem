@@ -1,0 +1,21 @@
+{
+  "command": [
+    "sh",
+    "-c",
+    "cd src && ../.venv/bin/python lanes.py --mode rq7 --repos ../results/rq7-frame/rq7_repos.txt --model ../results/develop-matched-2 --out ../results/rq7-final"
+  ],
+  "cwd": "detector",
+  "git_commit": "25c70cb7f4f909635271e6ef3a71d4623d8fa531",
+  "git_dirty": false,
+  "git_changes": [],
+  "inputs": {
+    "results/develop-matched-2/models.pkl": "0eb915aab2d74a5e22412ab616391cf7005cead8846e22745dda8e5629642faf",
+    "results/develop-matched-2/summary.json": "9beb91e231ed670305b285de0987a78562251f800fe9e48d044da046c03cbd88",
+    "results/rq7-frame/rq7_repos.txt": "33671eb65cb64ef3b6bd56f12c84013b0e4548117b7b91abb0034ab0c6dc49a1"
+  },
+  "platform": "macOS-15.7.4-arm64-arm-64bit-Mach-O",
+  "start": "2026-11-26T06:49:16+00:00",
+  "status": "ok",
+  "end": "2026-11-26T06:57:15+00:00",
+  "exit_code": 0
+}
