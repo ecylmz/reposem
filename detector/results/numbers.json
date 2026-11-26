@@ -1,0 +1,692 @@
+{
+ "DetThreshold": {
+  "value": 0.897222,
+  "digits": 3
+ },
+ "DetMatchedRepos": 155,
+ "DetMatchedMedianFull": {
+  "value": 0.993864,
+  "digits": 3
+ },
+ "DetMatchedMedianKeyword": {
+  "value": 0.857143,
+  "digits": 3
+ },
+ "DetMatchedMedianNoContent": {
+  "value": 0.963333,
+  "digits": 3
+ },
+ "DetMatchedMedianNoKeywords": {
+  "value": 0.985455,
+  "digits": 3
+ },
+ "DetMatchedMedianNoSize": {
+  "value": 0.989583,
+  "digits": 3
+ },
+ "DetMatchedMedianRandom": {
+  "value": 0.5,
+  "digits": 3
+ },
+ "DetMatchedMedianSizeFiles": {
+  "value": 0.740741,
+  "digits": 3
+ },
+ "DetMatchedMedianSizeLines": {
+  "value": 0.518519,
+  "digits": 3
+ },
+ "DetMatchedMedianWhitespace": {
+  "value": 0.5,
+  "digits": 3
+ },
+ "DetMatchedDiffKeyword": {
+  "value": 0.083333,
+  "digits": 3
+ },
+ "DetMatchedRKeyword": {
+  "value": 0.910714,
+  "digits": 3
+ },
+ "DetMatchedPKeyword": {
+  "latex": "$p < 0.001$"
+ },
+ "DetMatchedDiffSizeLines": {
+  "value": 0.4,
+  "digits": 3
+ },
+ "DetMatchedRSizeLines": {
+  "value": 0.98649,
+  "digits": 3
+ },
+ "DetMatchedPSizeLines": {
+  "latex": "$p < 0.001$"
+ },
+ "DetMatchedDiffSizeFiles": {
+  "value": 0.166667,
+  "digits": 3
+ },
+ "DetMatchedRSizeFiles": {
+  "value": 0.962032,
+  "digits": 3
+ },
+ "DetMatchedPSizeFiles": {
+  "latex": "$p < 0.001$"
+ },
+ "DetMatchedDiffWhitespace": {
+  "value": 0.473333,
+  "digits": 3
+ },
+ "DetMatchedRWhitespace": {
+  "value": 0.998659,
+  "digits": 3
+ },
+ "DetMatchedPWhitespace": {
+  "latex": "$p < 0.001$"
+ },
+ "DetMatchedDiffRandom": {
+  "value": 0.442424,
+  "digits": 3
+ },
+ "DetMatchedRRandom": {
+  "value": 0.999417,
+  "digits": 3
+ },
+ "DetMatchedPRandom": {
+  "latex": "$p < 0.001$"
+ },
+ "DetMatchedDiffNoKeywords": {
+  "value": 0.0,
+  "digits": 3
+ },
+ "DetMatchedRNoKeywords": {
+  "value": 0.258544,
+  "digits": 3
+ },
+ "DetMatchedPNoKeywords": {
+  "latex": "$p = 0.046$"
+ },
+ "DetMatchedDiffNoContent": {
+  "value": 0.0,
+  "digits": 3
+ },
+ "DetMatchedRNoContent": {
+  "value": 0.662924,
+  "digits": 3
+ },
+ "DetMatchedPNoContent": {
+  "latex": "$p < 0.001$"
+ },
+ "DetMatchedDiffNoSize": {
+  "value": 0.0,
+  "digits": 3
+ },
+ "DetMatchedRNoSize": {
+  "value": 0.148978,
+  "digits": 3
+ },
+ "DetMatchedPNoSize": {
+  "latex": "$p = 0.253$"
+ },
+ "DetUniformRepos": 160,
+ "DetUniformMedianFull": {
+  "value": 0.995,
+  "digits": 3
+ },
+ "DetUniformMedianKeyword": {
+  "value": 0.885,
+  "digits": 3
+ },
+ "DetUniformMedianNoContent": {
+  "value": 0.991875,
+  "digits": 3
+ },
+ "DetUniformMedianNoKeywords": {
+  "value": 0.99625,
+  "digits": 3
+ },
+ "DetUniformMedianNoSize": {
+  "value": 0.98875,
+  "digits": 3
+ },
+ "DetUniformMedianRandom": {
+  "value": 0.496622,
+  "digits": 3
+ },
+ "DetUniformMedianSizeFiles": {
+  "value": 0.979292,
+  "digits": 3
+ },
+ "DetUniformMedianSizeLines": {
+  "value": 0.95625,
+  "digits": 3
+ },
+ "DetUniformMedianWhitespace": {
+  "value": 0.49875,
+  "digits": 3
+ },
+ "DetUniformDiffKeyword": {
+  "value": 0.094446,
+  "digits": 3
+ },
+ "DetUniformRKeyword": {
+  "value": 0.990839,
+  "digits": 3
+ },
+ "DetUniformPKeyword": {
+  "latex": "$p < 0.001$"
+ },
+ "DetUniformDiffSizeLines": {
+  "value": 0.03,
+  "digits": 3
+ },
+ "DetUniformRSizeLines": {
+  "value": 0.926557,
+  "digits": 3
+ },
+ "DetUniformPSizeLines": {
+  "latex": "$p < 0.001$"
+ },
+ "DetUniformDiffSizeFiles": {
+  "value": 0.014256,
+  "digits": 3
+ },
+ "DetUniformRSizeFiles": {
+  "value": 0.781853,
+  "digits": 3
+ },
+ "DetUniformPSizeFiles": {
+  "latex": "$p < 0.001$"
+ },
+ "DetUniformDiffWhitespace": {
+  "value": 0.496094,
+  "digits": 3
+ },
+ "DetUniformRWhitespace": {
+  "value": 0.999534,
+  "digits": 3
+ },
+ "DetUniformPWhitespace": {
+  "latex": "$p < 0.001$"
+ },
+ "DetUniformDiffRandom": {
+  "value": 0.480625,
+  "digits": 3
+ },
+ "DetUniformRRandom": {
+  "value": 0.999767,
+  "digits": 3
+ },
+ "DetUniformPRandom": {
+  "latex": "$p < 0.001$"
+ },
+ "DetUniformDiffNoKeywords": {
+  "value": 0.0,
+  "digits": 3
+ },
+ "DetUniformRNoKeywords": {
+  "value": 0.317968,
+  "digits": 3
+ },
+ "DetUniformPNoKeywords": {
+  "latex": "$p = 0.002$"
+ },
+ "DetUniformDiffNoContent": {
+  "value": 0.000938,
+  "digits": 3
+ },
+ "DetUniformRNoContent": {
+  "value": 0.593526,
+  "digits": 3
+ },
+ "DetUniformPNoContent": {
+  "latex": "$p < 0.001$"
+ },
+ "DetUniformDiffNoSize": {
+  "value": 0.001402,
+  "digits": 3
+ },
+ "DetUniformRNoSize": {
+  "value": 0.647044,
+  "digits": 3
+ },
+ "DetUniformPNoSize": {
+  "latex": "$p < 0.001$"
+ },
+ "DetLayoutRepos": 129,
+ "DetLayoutMedianFull": {
+  "value": 1.0,
+  "digits": 3
+ },
+ "DetLayoutMedianKeyword": {
+  "value": 1.0,
+  "digits": 3
+ },
+ "DetLayoutMedianNoContent": {
+  "value": 1.0,
+  "digits": 3
+ },
+ "DetLayoutMedianNoKeywords": {
+  "value": 1.0,
+  "digits": 3
+ },
+ "DetLayoutMedianNoSize": {
+  "value": 1.0,
+  "digits": 3
+ },
+ "DetLayoutMedianRandom": {
+  "value": 0.5,
+  "digits": 3
+ },
+ "DetLayoutMedianSizeFiles": {
+  "value": 0.722222,
+  "digits": 3
+ },
+ "DetLayoutMedianSizeLines": {
+  "value": 0.518519,
+  "digits": 3
+ },
+ "DetLayoutMedianWhitespace": {
+  "value": 0.5,
+  "digits": 3
+ },
+ "DetLayoutDiffKeyword": {
+  "value": 0.0,
+  "digits": 3
+ },
+ "DetLayoutRKeyword": {
+  "value": 0.341808,
+  "digits": 3
+ },
+ "DetLayoutPKeyword": {
+  "latex": "$p = 0.022$"
+ },
+ "DetLayoutDiffSizeLines": {
+  "value": 0.44898,
+  "digits": 3
+ },
+ "DetLayoutRSizeLines": {
+  "value": 0.993388,
+  "digits": 3
+ },
+ "DetLayoutPSizeLines": {
+  "latex": "$p < 0.001$"
+ },
+ "DetLayoutDiffSizeFiles": {
+  "value": 0.23037,
+  "digits": 3
+ },
+ "DetLayoutRSizeFiles": {
+  "value": 0.975458,
+  "digits": 3
+ },
+ "DetLayoutPSizeFiles": {
+  "latex": "$p < 0.001$"
+ },
+ "DetLayoutDiffWhitespace": {
+  "value": 0.5,
+  "digits": 3
+ },
+ "DetLayoutRWhitespace": {
+  "value": 0.99875,
+  "digits": 3
+ },
+ "DetLayoutPWhitespace": {
+  "latex": "$p < 0.001$"
+ },
+ "DetLayoutDiffRandom": {
+  "value": 0.469388,
+  "digits": 3
+ },
+ "DetLayoutRRandom": {
+  "value": 0.982037,
+  "digits": 3
+ },
+ "DetLayoutPRandom": {
+  "latex": "$p < 0.001$"
+ },
+ "DetLayoutDiffNoKeywords": {
+  "value": 0.0,
+  "digits": 3
+ },
+ "DetLayoutRNoKeywords": {
+  "value": 0.702857,
+  "digits": 3
+ },
+ "DetLayoutPNoKeywords": {
+  "latex": "$p < 0.001$"
+ },
+ "DetLayoutDiffNoContent": {
+  "value": 0.0,
+  "digits": 3
+ },
+ "DetLayoutRNoContent": {
+  "value": 0.301248,
+  "digits": 3
+ },
+ "DetLayoutPNoContent": {
+  "latex": "$p = 0.131$"
+ },
+ "DetLayoutDiffNoSize": {
+  "value": 0.0,
+  "digits": 3
+ },
+ "DetLayoutRNoSize": {
+  "value": -0.365591,
+  "digits": 3
+ },
+ "DetLayoutPNoSize": {
+  "latex": "$p = 0.080$"
+ },
+ "DetRecall": {
+  "value": 76.415151,
+  "digits": 1
+ },
+ "DetRecallLo": {
+  "value": 71.399511,
+  "digits": 1
+ },
+ "DetRecallHi": {
+  "value": 80.894947,
+  "digits": 1
+ },
+ "DetFlagged": {
+  "value": 0.971378,
+  "digits": 1
+ },
+ "DetFlaggedLo": {
+  "value": 0.874055,
+  "digits": 1
+ },
+ "DetFlaggedHi": {
+  "value": 1.070007,
+  "digits": 1
+ },
+ "DetSixRepos": 162,
+ "DetSixReposReattributed": 157,
+ "DetSixRecoveryW": {
+  "value": 30.502097,
+  "digits": 1
+ },
+ "DetSixRecoveryWLo": {
+  "value": 25.549254,
+  "digits": 1
+ },
+ "DetSixRecoveryWHi": {
+  "value": 35.682274,
+  "digits": 1
+ },
+ "DetSixRecoveryWmc": {
+  "value": 32.28459,
+  "digits": 1
+ },
+ "DetSixRecoveryWmcLo": {
+  "value": 27.557891,
+  "digits": 1
+ },
+ "DetSixRecoveryWmcHi": {
+  "value": 37.242826,
+  "digits": 1
+ },
+ "DetSixRecoveryDetected": {
+  "value": 81.149614,
+  "digits": 1
+ },
+ "DetSixRecoveryDetectedLo": {
+  "value": 76.217116,
+  "digits": 1
+ },
+ "DetSixRecoveryDetectedHi": {
+  "value": 85.898701,
+  "digits": 1
+ },
+ "DetSixReassignW": {
+  "value": 5.286207,
+  "digits": 1
+ },
+ "DetSixReassignWLo": {
+  "value": 4.537456,
+  "digits": 1
+ },
+ "DetSixReassignWHi": {
+  "value": 6.114141,
+  "digits": 1
+ },
+ "DetSixReassignWmc": {
+  "value": 11.555361,
+  "digits": 1
+ },
+ "DetSixReassignWmcLo": {
+  "value": 10.515699,
+  "digits": 1
+ },
+ "DetSixReassignWmcHi": {
+  "value": 12.680613,
+  "digits": 1
+ },
+ "DetSixReassignDetected": {
+  "value": 3.735942,
+  "digits": 1
+ },
+ "DetSixReassignDetectedLo": {
+  "value": 2.924414,
+  "digits": 1
+ },
+ "DetSixReassignDetectedHi": {
+  "value": 4.678466,
+  "digits": 1
+ },
+ "DetSixReassignDeclared": {
+  "value": 0.0,
+  "digits": 1
+ },
+ "DetSixReassignDeclaredLo": {
+  "value": 0.0,
+  "digits": 1
+ },
+ "DetSixReassignDeclaredHi": {
+  "value": 0.0,
+  "digits": 1
+ },
+ "DetSixOwnerVsDeclRaw": {
+  "value": 16.643192,
+  "digits": 1
+ },
+ "DetSixOwnerVsDeclRawLo": {
+  "value": 13.245264,
+  "digits": 1
+ },
+ "DetSixOwnerVsDeclRawHi": {
+  "value": 20.418026,
+  "digits": 1
+ },
+ "DetSixOwnerVsDeclW": {
+  "value": 10.899613,
+  "digits": 1
+ },
+ "DetSixOwnerVsDeclWLo": {
+  "value": 8.768571,
+  "digits": 1
+ },
+ "DetSixOwnerVsDeclWHi": {
+  "value": 13.30176,
+  "digits": 1
+ },
+ "DetSixOwnerVsDeclWmc": {
+  "value": 14.332027,
+  "digits": 1
+ },
+ "DetSixOwnerVsDeclWmcLo": {
+  "value": 12.18595,
+  "digits": 1
+ },
+ "DetSixOwnerVsDeclWmcHi": {
+  "value": 16.692876,
+  "digits": 1
+ },
+ "DetSixOwnerVsDeclDetected": {
+  "value": 5.970383,
+  "digits": 1
+ },
+ "DetSixOwnerVsDeclDetectedLo": {
+  "value": 4.221494,
+  "digits": 1
+ },
+ "DetSixOwnerVsDeclDetectedHi": {
+  "value": 8.137071,
+  "digits": 1
+ },
+ "DetSixRandomOwnerVsRawDeclared": {
+  "value": 3.876543,
+  "digits": 1
+ },
+ "DetSixRandomOwnerVsRawDeclaredLo": {
+  "value": 2.814815,
+  "digits": 1
+ },
+ "DetSixRandomOwnerVsRawDeclaredHi": {
+  "value": 5.08642,
+  "digits": 1
+ },
+ "DetSixRandomOwnerVsRawDetected": {
+  "value": 6.024691,
+  "digits": 1
+ },
+ "DetSixRandomOwnerVsRawDetectedLo": {
+  "value": 4.765432,
+  "digits": 1
+ },
+ "DetSixRandomOwnerVsRawDetectedHi": {
+  "value": 7.382716,
+  "digits": 1
+ },
+ "DetSixRandomOwnerVsRawW": {
+  "value": 5.382716,
+  "digits": 1
+ },
+ "DetSixRandomOwnerVsRawWLo": {
+  "value": 4.271605,
+  "digits": 1
+ },
+ "DetSixRandomOwnerVsRawWHi": {
+  "value": 6.666667,
+  "digits": 1
+ },
+ "DetSixRecoveryVsWDiff": {
+  "value": 53.980892,
+  "digits": 1
+ },
+ "DetSixRecoveryVsWMeanDiff": {
+  "value": 50.647517,
+  "digits": 1
+ },
+ "DetSixRecoveryVsWR": {
+  "value": 0.91257,
+  "digits": 3
+ },
+ "DetSixRecoveryVsWP": {
+  "latex": "$p < 0.001$"
+ },
+ "DetSixRecoveryVsWmcDiff": {
+  "value": 49.484536,
+  "digits": 1
+ },
+ "DetSixRecoveryVsWmcMeanDiff": {
+  "value": 48.865024,
+  "digits": 1
+ },
+ "DetSixRecoveryVsWmcR": {
+  "value": 0.911391,
+  "digits": 3
+ },
+ "DetSixRecoveryVsWmcP": {
+  "latex": "$p < 0.001$"
+ },
+ "DetSixReassignVsWDiff": {
+  "value": -1.320574,
+  "digits": 1
+ },
+ "DetSixReassignVsWMeanDiff": {
+  "value": -1.550265,
+  "digits": 1
+ },
+ "DetSixReassignVsWR": {
+  "value": -0.48323,
+  "digits": 3
+ },
+ "DetSixReassignVsWP": {
+  "latex": "$p < 0.001$"
+ },
+ "DetSixReassignVsWmcDiff": {
+  "value": -7.100592,
+  "digits": 1
+ },
+ "DetSixReassignVsWmcMeanDiff": {
+  "value": -7.81942,
+  "digits": 1
+ },
+ "DetSixReassignVsWmcR": {
+  "value": -0.933075,
+  "digits": 3
+ },
+ "DetSixReassignVsWmcP": {
+  "latex": "$p < 0.001$"
+ },
+ "DetSixDetectedMedian": {
+  "value": 21.0,
+  "digits": 3
+ },
+ "DetSixDetectedShare": {
+  "value": 3.89865,
+  "digits": 1
+ },
+ "DetSixDeclaredRecall": {
+  "value": 27.21519,
+  "digits": 1
+ },
+ "DetSevenRepos": 150,
+ "DetSevenOwnerDetected": {
+  "value": 1.44,
+  "digits": 1
+ },
+ "DetSevenOwnerDetectedLo": {
+  "value": 0.773333,
+  "digits": 1
+ },
+ "DetSevenOwnerDetectedHi": {
+  "value": 2.266667,
+  "digits": 1
+ },
+ "DetSevenOwnerW": {
+  "value": 2.153016,
+  "digits": 1
+ },
+ "DetSevenOwnerWLo": {
+  "value": 1.471085,
+  "digits": 1
+ },
+ "DetSevenOwnerWHi": {
+  "value": 2.942646,
+  "digits": 1
+ },
+ "DetSevenTvdDetected": {
+  "value": 1.425331,
+  "digits": 1
+ },
+ "DetSevenTvdDetectedLo": {
+  "value": 0.880126,
+  "digits": 1
+ },
+ "DetSevenTvdDetectedHi": {
+  "value": 2.143765,
+  "digits": 1
+ },
+ "DetSevenShareWithDetected": {
+  "value": 81.333333,
+  "digits": 1
+ },
+ "DetSevenDetectedMedian": {
+  "value": 2.0,
+  "digits": 3
+ }
+}

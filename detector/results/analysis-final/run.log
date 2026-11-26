@@ -1,0 +1,6 @@
+cd src && ../.venv/bin/python analyze.py --role final --features ../results/features-2/features.csv --matched-features ../results/matched-features/features.csv --split ../results/pools/split.csv \
+	  --models ../results/develop-matched-2 --rq6 ../results/rq6-final --rq7 ../results/rq7-final --out ../results/analysis-final > /dev/null
+.venv/bin/python src/paper_numbers.py results/analysis-final/analysis.json results/numbers.json
+184 values written to results/numbers.json
+python3 tools/make-numbers.py results/numbers.json paper/numbers.tex
+make-numbers: 184 macros written to paper/numbers.tex
