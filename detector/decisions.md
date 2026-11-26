@@ -91,3 +91,14 @@ Reason: code, configurations, seeds, model (results/develop-matched-2), threshol
 Decided by: proposed by Claude.
 Effect: approval pending. After approval, the final evaluation runs once: make reproduce (RQ6 lanes on 162 final repositories, RQ7 lanes on 150 repositories, then make numbers). Estimate: 2 to 4 hours of compute, no money, no new disk.
 Commit: a678b75923d3d5856e07815a3c24cc3972ce749a (tag analysis-freeze).
+
+## D-008, 2026-11-26: freeze approved
+
+Type: approval
+Phase: freeze
+Seen results: development results only.
+Change: none.
+Reason: the user approved D-007, including D-006.
+Decided by: the user.
+Effect: the final evaluation runs once.
+Commit: tag `analysis-freeze`.
