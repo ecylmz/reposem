@@ -98,6 +98,7 @@ def main(src, dst):
     n["DetSevenCandidates"], n["DetSevenChecked"] = f7["candidates"], f7["checked"]
     n["DetSevenExclCommits"], n["DetSevenExclContrib"] = f7["excluded_commits"], f7["excluded_contributors"]
     n["DetFinalPositives"], n["DetFinalMatchedRows"] = r5["positives"], r5["matched_rows"]
+    n["DetSharedPositives"] = pools["positives"] - dev["positives"] - r5["positives"]
     # Exploratory analyses after the final evaluation (results/exploratory/), labeled DetX.
     x5 = res / "exploratory/rq5-checks/summary.json"
     if x5.exists():

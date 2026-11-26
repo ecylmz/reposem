@@ -758,6 +758,7 @@
  "DetFinalMatchedRows": {
   "latex": "6{,}421"
  },
+ "DetSharedPositives": 10,
  "DetXPosMedian": {
   "value": 4.0,
   "digits": 0
