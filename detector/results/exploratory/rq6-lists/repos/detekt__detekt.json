@@ -1,0 +1,1 @@
+{"repo": "detekt/detekt", "candidates": 36, "declared": 1, "declared_in_candidates": 0, "flagged": {"DETECTED": 7, "KEYWORD": 5, "SIZE": 8}, "flagged_declared": {"DETECTED": 0, "KEYWORD": 0, "SIZE": 0}, "touched": [], "status": "OK", "seconds": 4.2}

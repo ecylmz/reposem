@@ -1,0 +1,31 @@
+{
+  "status": {
+    "OK": 162
+  },
+  "repos": 162,
+  "size_cut_log_lines": 8.552724300302064,
+  "size_cut_lines": 5179.849408586168,
+  "mean": {
+    "recovery_DETECTED": 0.8114961356862975,
+    "reassign_DETECTED": 0.03735941769230469,
+    "recovery_KEYWORD": 0.6655746164928853,
+    "reassign_KEYWORD": 0.041005846373159544,
+    "recovery_SIZE": 0.5690158515196944,
+    "reassign_SIZE": 0.038671957098950306
+  },
+  "median_flagged": {
+    "DETECTED": 21.0,
+    "KEYWORD": 39.0,
+    "SIZE": 16.0
+  },
+  "recall_in_candidates": {
+    "DETECTED": 0.7506234413965087,
+    "KEYWORD": 0.669576059850374,
+    "SIZE": 0.3765586034912718
+  },
+  "precision_vs_declared": {
+    "DETECTED": 0.12300776460972619,
+    "KEYWORD": 0.05502612972640639,
+    "SIZE": 0.0824235807860262
+  }
+}

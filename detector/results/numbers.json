@@ -670,16 +670,16 @@
   "digits": 1
  },
  "DetSevenTvdDetected": {
-  "value": 1.425331,
-  "digits": 1
+  "value": 0.014253,
+  "digits": 3
  },
  "DetSevenTvdDetectedLo": {
-  "value": 0.880126,
-  "digits": 1
+  "value": 0.008801,
+  "digits": 3
  },
  "DetSevenTvdDetectedHi": {
-  "value": 2.143765,
-  "digits": 1
+  "value": 0.021438,
+  "digits": 3
  },
  "DetSevenShareWithDetected": {
   "value": 81.333333,
@@ -757,5 +757,258 @@
  },
  "DetFinalMatchedRows": {
   "latex": "6{,}421"
+ },
+ "DetXPosMedian": {
+  "value": 4.0,
+  "digits": 0
+ },
+ "DetXPosQOne": {
+  "value": 2.0,
+  "digits": 0
+ },
+ "DetXPosQThree": {
+  "value": 10.0,
+  "digits": 0
+ },
+ "DetXPosMax": 421,
+ "DetXAtOneFull": {
+  "value": 49.032258,
+  "digits": 1
+ },
+ "DetXAtOneKeyword": {
+  "value": 28.387097,
+  "digits": 1
+ },
+ "DetXPooledAucFull": {
+  "value": 0.878591,
+  "digits": 3
+ },
+ "DetXPooledApFull": {
+  "value": 0.737777,
+  "digits": 3
+ },
+ "DetXPooledAucKeyword": {
+  "value": 0.754713,
+  "digits": 3
+ },
+ "DetXPooledApKeyword": {
+  "value": 0.543626,
+  "digits": 3
+ },
+ "DetXPooledAucSizeFiles": {
+  "value": 0.565646,
+  "digits": 3
+ },
+ "DetXPooledApSizeFiles": {
+  "value": 0.359698,
+  "digits": 3
+ },
+ "DetXQTenFull": {
+  "value": 0.833333,
+  "digits": 3
+ },
+ "DetXQTenKeyword": {
+  "value": 0.5,
+  "digits": 3
+ },
+ "DetXLogregRepos": 155,
+ "DetXLogregMedianFull": {
+  "value": 0.962963,
+  "digits": 3
+ },
+ "DetXLogregMedianKeyword": {
+  "value": 0.857143,
+  "digits": 3
+ },
+ "DetXLogregDiff": {
+  "value": 0.044077,
+  "digits": 3
+ },
+ "DetXLogregR": {
+  "value": 0.782642,
+  "digits": 3
+ },
+ "DetXLogregP": {
+  "latex": "$p < 0.001$"
+ },
+ "DetXNoOwnerRepos": 142,
+ "DetXNoOwnerMedianFull": {
+  "value": 0.99353,
+  "digits": 3
+ },
+ "DetXNoOwnerMedianKeyword": {
+  "value": 0.845833,
+  "digits": 3
+ },
+ "DetXNoOwnerDiff": {
+  "value": 0.085938,
+  "digits": 3
+ },
+ "DetXNoOwnerR": {
+  "value": 0.909158,
+  "digits": 3
+ },
+ "DetXNoOwnerP": {
+  "latex": "$p < 0.001$"
+ },
+ "DetXNoBotRepos": 154,
+ "DetXNoBotMedianFull": {
+  "value": 1.0,
+  "digits": 3
+ },
+ "DetXNoBotMedianKeyword": {
+  "value": 0.853571,
+  "digits": 3
+ },
+ "DetXNoBotDiff": {
+  "value": 0.085937,
+  "digits": 3
+ },
+ "DetXNoBotR": {
+  "value": 0.916097,
+  "digits": 3
+ },
+ "DetXNoBotP": {
+  "latex": "$p < 0.001$"
+ },
+ "DetXNoRefineRepos": 154,
+ "DetXNoRefineMedianFull": {
+  "value": 0.996932,
+  "digits": 3
+ },
+ "DetXNoRefineMedianKeyword": {
+  "value": 0.85,
+  "digits": 3
+ },
+ "DetXNoRefineDiff": {
+  "value": 0.083333,
+  "digits": 3
+ },
+ "DetXNoRefineR": {
+  "value": 0.945618,
+  "digits": 3
+ },
+ "DetXNoRefineP": {
+  "latex": "$p < 0.001$"
+ },
+ "DetXSharedOwnerRepos": 14,
+ "DetXBotPositives": 227,
+ "DetXRefineCommits": 42,
+ "DetXRecallHalf": {
+  "value": 67.65624,
+  "digits": 1
+ },
+ "DetXRecallTwo": {
+  "value": 84.089001,
+  "digits": 1
+ },
+ "DetXRecallFive": {
+  "value": 91.577093,
+  "digits": 1
+ },
+ "DetXFlagN": 628,
+ "DetXFlagWs": {
+  "value": 13.535032,
+  "digits": 1
+ },
+ "DetXFlagAlnum": {
+  "value": 28.821656,
+  "digits": 1
+ },
+ "DetXFlagTok": {
+  "value": 72.133758,
+  "digits": 1
+ },
+ "DetXFlagKw": {
+  "value": 76.592357,
+  "digits": 1
+ },
+ "DetXFlagAny": {
+  "value": 91.56051,
+  "digits": 1
+ },
+ "DetXFlagLines": {
+  "value": 128.49999999999997,
+  "digits": 0
+ },
+ "DetXDeclWs": {
+  "value": 6.073059,
+  "digits": 1
+ },
+ "DetXDeclAlnum": {
+  "value": 19.406393,
+  "digits": 1
+ },
+ "DetXDeclTok": {
+  "value": 58.127854,
+  "digits": 1
+ },
+ "DetXDeclKw": {
+  "value": 57.031963,
+  "digits": 1
+ },
+ "DetXDeclAny": {
+  "value": 71.73516,
+  "digits": 1
+ },
+ "DetXDeclLines": {
+  "value": 368.0,
+  "digits": 0
+ },
+ "DetXUnlWs": {
+  "value": 0.520382,
+  "digits": 1
+ },
+ "DetXUnlAlnum": {
+  "value": 2.770722,
+  "digits": 1
+ },
+ "DetXUnlTok": {
+  "value": 15.750836,
+  "digits": 1
+ },
+ "DetXUnlKw": {
+  "value": 6.300335,
+  "digits": 1
+ },
+ "DetXUnlAny": {
+  "value": 20.059472,
+  "digits": 1
+ },
+ "DetXUnlLines": {
+  "value": 20.0,
+  "digits": 0
+ },
+ "DetXShuffleWithinMean": {
+  "value": 0.65242,
+  "digits": 3
+ },
+ "DetXShuffleWithinMin": {
+  "value": 0.622549,
+  "digits": 3
+ },
+ "DetXShuffleWithinMax": {
+  "value": 0.676595,
+  "digits": 3
+ },
+ "DetXShuffleGlobalMean": {
+  "value": 0.408344,
+  "digits": 3
+ },
+ "DetXShuffleGlobalMin": {
+  "value": 0.362742,
+  "digits": 3
+ },
+ "DetXShuffleGlobalMax": {
+  "value": 0.442174,
+  "digits": 3
+ },
+ "DetXSixFlagShare": {
+  "value": 3.89865,
+  "digits": 1
+ },
+ "DetXSevenFlagShare": {
+  "value": 1.61633,
+  "digits": 1
  }
 }

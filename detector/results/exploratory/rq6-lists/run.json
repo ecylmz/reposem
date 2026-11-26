@@ -1,0 +1,20 @@
+{
+  "command": [
+    "sh",
+    "-c",
+    "cd src && ../.venv/bin/python exploratory_rq6.py --repos ../results/final_repos.txt --model ../results/develop-matched-2 --features ../results/features-2/features.csv --split ../results/pools/split.csv --out ../results/exploratory/rq6-lists"
+  ],
+  "cwd": "detector",
+  "git_commit": "04660ad29cb12697a218e2f9c0e0b4568d689a10",
+  "git_dirty": false,
+  "git_changes": [],
+  "inputs": {
+    "results/develop-matched-2/models.pkl": "0eb915aab2d74a5e22412ab616391cf7005cead8846e22745dda8e5629642faf",
+    "results/final_repos.txt": "c5d40deeb4a0cb62905e33b62360567cc48eaf3f2be43c169576947972057f1f"
+  },
+  "platform": "macOS-15.7.4-arm64-arm-64bit-Mach-O",
+  "start": "2026-11-26T07:16:41+00:00",
+  "status": "ok",
+  "end": "2026-11-26T07:48:26+00:00",
+  "exit_code": 0
+}
