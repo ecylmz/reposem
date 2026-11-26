@@ -1,7 +1,7 @@
 {
   "title": "Replication package: project-declared and learned blame ignore lists and line-based ownership",
   "upload_type": "dataset",
-  "description": "Replication package for a census of 435 GitHub repositories with at least 5,000 stars that keep a .git-blame-ignore-revs file. It contains the sampling frame, the measurement and analysis scripts, the per-repository measurement records with hashed developer identities, and the script that regenerates every number, table, and figure of the article. Version 2.0.0 adds a detector trained on the project declarations that recommends which commits blame should ignore, its protocol and decision log, the recorded runs of its development and its one-time final evaluation on 162 held-out repositories, and its application to 150 popular repositories that declare nothing.",
+  "description": "Replication package for a census of 435 GitHub repositories with at least 5,000 stars that keep a .git-blame-ignore-revs file. It contains the sampling frame, the measurement and analysis scripts, the per-repository measurement records with hashed developer identities, and the script that regenerates every number, table, and figure of the article. Version 2.0.0 adds a detector trained on the project declarations that recommends which commits blame should ignore, its protocol and decision log, the recorded runs of its development and its one-time final evaluation on 162 held-out repositories, and its application to 150 popular repositories that declare nothing. Version 2.0.1 removes the manual validation material of the commit-category rule, which the article does not use.",
   "creators": [
     {
       "name": "Yılmaz, Emre Can",
@@ -10,6 +10,17 @@
     }
   ],
   "license": "cc-by-4.0",
-  "keywords": ["git blame", "code ownership", "mining software repositories", "measurement validity", ".git-blame-ignore-revs", "positive-unlabeled learning"],
-  "communities": [{"identifier": "empirical-software-engineering"}]
+  "keywords": [
+    "git blame",
+    "code ownership",
+    "mining software repositories",
+    "measurement validity",
+    ".git-blame-ignore-revs",
+    "positive-unlabeled learning"
+  ],
+  "communities": [
+    {
+      "identifier": "empirical-software-engineering"
+    }
+  ]
 }

@@ -52,7 +52,6 @@ def main():
     res = json.loads((analysis / "results.json").read_text())
     frame = json.loads((analysis / "frame.json").read_text())
     unresolved = pd.read_csv(analysis / "unresolved.csv")
-    catcheck = json.loads((analysis / "category_check.json").read_text())
     m = {}
 
     # Frame and inclusion.
@@ -110,8 +109,6 @@ def main():
     m["UnresolvedPRPct"] = pct(kinds.get("PR_COMMIT_SQUASHED_OR_REBASED", 0) / n_un, 0)
     m["UnresolvedLostPct"] = pct(kinds.get("NOT_FOUND_ON_GITHUB", 0) / n_un, 0)
     m["UnresolvedMalformedPct"] = pct(kinds.get("MALFORMED", 0) / n_un, 0)
-    m["CatCheckN"] = str(catcheck["n"])
-    m["CatCheckAgree"] = str(catcheck["agree"])
 
     # RQ2.
     t, r = res["divergence"]["touched"], res["divergence"]["random"]
@@ -299,8 +296,6 @@ def supplement_macros(m, analysis: Path, ms: Path, res: dict, frame: dict):
     m["UnresolvedRepoRatio"] = str(round(nonempty / d["repos_with_unresolved"]))
     m["EntriesUnresolvedPct"] = pct(d["entries_unresolved_total"] / d["entries_total"])
     m["EntriesTotal"] = thousands(d["entries_total"])
-    lo, hi = wilson(int(m["CatCheckAgree"]), int(m["CatCheckN"]))
-    m["CatCheckCI"] = f"{100 * lo:.0f}--{100 * hi:.0f}\\%"
     m["ExcludedSmall"] = str(frame["excluded_commits"] + frame["excluded_contributors"])
 
     revs = pd.read_csv(analysis / "declared_revisions.csv")
@@ -583,18 +578,6 @@ def final_macros(m, analysis: Path, ms: Path):
     m["HistMinorChangePct"] = pct(r["hist_minor_change"][0], 0)
     m["PartialNoLaterRaw"] = signed(r["partial_no_later"]["RAW"], 3)
     m["PartialNoLaterDecl"] = signed(r["partial_no_later"]["DECLARED"], 3)
-    kp = analysis / "kappa.json"
-    if kp.exists():
-        k = list(json.loads(kp.read_text())["per_rater"].values())[0]
-        m["KappaN"] = str(k["items"])
-        m["KappaAgree"] = pct(k["agreement"], 0)
-        m["KappaAgreeCI"] = f"{100 * k['agreement_ci'][0]:.0f}--{100 * k['agreement_ci'][1]:.0f}\\%"
-        m["Kappa"] = f"{k['kappa']:.2f}"
-        m["KappaCI"] = f"{k['kappa_ci'][0]:.2f}--{k['kappa_ci'][1]:.2f}"
-        m["KappaCoarseAgree"] = pct(k["coarse_agreement"], 0)
-        m["KappaCoarse"] = f"{k['coarse_kappa']:.2f}"
-        m["KappaRuleFormatter"] = str(k["rule_counts"].get("formatter", 0))
-        m["KappaHumanFormatter"] = str(k["human_counts"].get("formatter", 0))
     if "github" in r:
         g = r["github"]
         m["GhRepos"] = str(g["repos"])

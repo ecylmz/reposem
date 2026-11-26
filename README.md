@@ -16,14 +16,13 @@ The study uses a census of 435 GitHub repositories with at least 5,000 stars. It
 | `scripts/extra_lanes.py` | Measures touched files above 5,000 lines, and the `-w -M -C -C -C` lane on a subsample. |
 | `scripts/github_check.py` | Compares the declared lane with the blame that the GitHub GraphQL API reports. |
 | `scripts/declarations_check.py`, `scripts/unresolved.py`, `scripts/mechanism.py` | Describe the ignore files, classify inactive entries, and characterize owner changes. These steps need the clones or the GitHub API. |
-| `scripts/analyze_*.py`, `scripts/kappa.py` | Compute every estimate, interval, and test reported in the article. |
+| `scripts/analyze_*.py` | Compute every estimate, interval, and test reported in the article. |
 | `scripts/make_numbers.py`, `scripts/figures.py` | Write the numbers, tables, and figures of the article. |
 | `scripts/measurement_contract.py` | Git helpers: pinned Git runner, `.mailmap` identity normalization, ignore-file parsing. |
 | `data/frame_*.json*`, `data/frame.json`, `data/study_repos.txt` | The sampling frame, the presence check, repository metadata, and the 435 included repositories. |
 | `data/study/`, `data/supplement/`, `data/bulk/`, `data/variants/`, `data/extra/`, `data/github_check/` | One JSON measurement record per repository and analysis. |
 | `data/analysis/` | All analysis outputs, including the intermediate files of the steps that need clones. |
-| `data/category_*.json` | The development and validation samples of the commit-category rule. |
-| `rater/` | The blinded rating items, the answer key, the rating form, and the independent rater's labels. |
+| `data/category_sample.json` | The random sample of 100 commit subjects on which the commit-category rule was refined. |
 
 ## Detector study (`detector/`)
 

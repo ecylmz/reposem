@@ -25,14 +25,13 @@ if [[ "${1:-}" == "--measure" ]]; then
   "$py" scripts/mechanism.py data/study "$analysis/mechanism.csv"
 fi
 
-cp data/frame.json data/category_check.json "$analysis"/
+cp data/frame.json "$analysis"/
 "$py" scripts/analyze_full.py data/study "$analysis" > /dev/null
 "$py" scripts/analyze_supplement.py data/study data/supplement "$analysis" > /dev/null
 if [[ "${1:-}" == "--measure" ]]; then
   "$py" scripts/analyze_round3.py data/study data/supplement "$analysis" > /dev/null
 fi
 "$py" scripts/analyze_final.py data/study "$analysis" > /dev/null
-"$py" scripts/kappa.py rater/answers rater/key.json "$analysis/kappa.json" > /dev/null
 "$py" scripts/make_numbers.py "$analysis" output
 "$py" scripts/figures.py "$analysis" output/figures
 echo "Done: numbers in output/numbers.tex, tables in output/tables/, figures in output/figures/."
