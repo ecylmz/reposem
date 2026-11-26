@@ -1,0 +1,21 @@
+{
+  "command": [
+    "sh",
+    "-c",
+    "cd src && ../.venv/bin/python exploratory_rq5.py --features ../results/features-2/features.csv --matched-features ../results/matched-features/features.csv --split ../results/pools/split.csv --models ../results/develop-matched-2 --rq6 ../results/rq6-final --rq7 ../results/rq7-final --out ../results/exploratory/rq5-checks"
+  ],
+  "cwd": "detector",
+  "git_commit": "91506ed8f68fc45a18d69d62d595f8e75ab0636a",
+  "git_dirty": false,
+  "git_changes": [],
+  "inputs": {
+    "results/develop-matched-2/models.pkl": "0eb915aab2d74a5e22412ab616391cf7005cead8846e22745dda8e5629642faf",
+    "results/features-2/features.csv": "44c549b22bbfbbf36c8888903d524cb6d2b1b9a51b032e33265e43afe5d75f4e",
+    "results/matched-features/features.csv": "c8befcc6d27aa52389cbf1e66ece427f7f3946f1ce57389b39146fda6a9f196a"
+  },
+  "platform": "macOS-15.7.4-arm64-arm-64bit-Mach-O",
+  "start": "2026-11-26T07:19:55+00:00",
+  "status": "ok",
+  "end": "2026-11-26T07:22:53+00:00",
+  "exit_code": 0
+}
