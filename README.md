@@ -38,6 +38,14 @@ The study uses a census of 435 GitHub repositories with at least 5,000 stars. It
 
 The planned analyses are RQ5 (detection on 162 held-out repositories, primary measure size-matched PU-AUC), RQ6 (recovery and reassignment of the detected list against `-w` and `-w -M -C` on the same repositories), and the two ablations. RQ7 is descriptive. Every other analysis is exploratory.
 
+| RQ | Label | Result files | Macros |
+|---|---|---|---|
+| RQ5 detection | planned | `detector/results/analysis-final/analysis.json` (`rq5`), `rq5_repo.csv` | `\DetMatched*`, `\DetUniform*`, `\DetRecall*`, `\DetFlagged*` |
+| RQ6 attribution | planned | `detector/results/rq6-final/`, `analysis.json` (`rq6`), `rq6_repo.csv` | `\DetSix*` |
+| RQ7 reach | planned (descriptive) | `detector/results/rq7-final/`, `analysis.json` (`rq7`), `rq7_repo.csv` | `\DetSeven*` |
+| RQ5 checks (pooled measures, logistic regression, subsets, flag rates, content of flagged commits, label shuffles) | exploratory | `detector/results/exploratory/rq5-checks/summary.json` | `\DetX*` |
+| RQ6 with keyword and size lists | exploratory | `detector/results/exploratory/rq6-lists/`, `rq6-lists-tests/tests.json` | `\DetXList*` |
+
 To rebuild the RQ5 to RQ7 numbers from the deposited result files, run `make numbers` in `detector/` (minutes; needs only the files in this package). `make reproduce` reruns the blame lanes of the final evaluation. It needs the clones of the 162 final and 150 RQ7 repositories (about 140 GB) and takes several hours.
 
 ## Privacy
