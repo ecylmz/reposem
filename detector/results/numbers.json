@@ -634,7 +634,7 @@
  },
  "DetSixDetectedMedian": {
   "value": 21.0,
-  "digits": 3
+  "digits": 0
  },
  "DetSixDetectedShare": {
   "value": 3.89865,
@@ -687,7 +687,7 @@
  },
  "DetSevenDetectedMedian": {
   "value": 2.0,
-  "digits": 3
+  "digits": 0
  },
  "DetPoolRepos": 406,
  "DetPositives": {

@@ -64,7 +64,7 @@ def main(src, dst):
             n[k + "MeanDiff"] = pct(v["mean_diff"])
             n[k + "R"] = r3(v["r"])
             n[k + "P"] = pval(v["p_holm"])
-        n["DetSixDetectedMedian"] = r3(r6["detected_median"])
+        n["DetSixDetectedMedian"] = {"value": float(r6["detected_median"]), "digits": 0 if float(r6["detected_median"]).is_integer() else 1}
         n["DetSixDetectedShare"] = pct(r6["detected_share_of_candidates"])
         n["DetSixDeclaredRecall"] = pct(r6["declared_recall_in_candidates"])
     if "rq7" in a:
@@ -74,7 +74,7 @@ def main(src, dst):
             mean, lo, hi = r7[key]
             n[f"DetSeven{tag}"], n[f"DetSeven{tag}Lo"], n[f"DetSeven{tag}Hi"] = pct(mean), pct(lo), pct(hi)
         n["DetSevenShareWithDetected"] = pct(r7["share_repos_with_detected"])
-        n["DetSevenDetectedMedian"] = r3(r7["detected_median"])
+        n["DetSevenDetectedMedian"] = {"value": float(r7["detected_median"]), "digits": 0 if float(r7["detected_median"]).is_integer() else 1}
     # Descriptive counts and development facts from the other result files of the package.
     res = Path(src).resolve().parents[1]
     pools = json.loads((res / "pools/counts.json").read_text())
