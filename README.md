@@ -1,8 +1,8 @@
-# Replication package: project-declared ignore revisions and line-based ownership
+# Replication package: project-declared and learned blame ignore lists and line-based ownership
 
-This package accompanies an article by Emre Can Yılmaz on project-declared ignore revisions and line-based ownership, submitted to Empirical Software Engineering.
+This package accompanies an article by Emre Can Yılmaz on project-declared ignore revisions and line-based ownership.
 
-The study uses a census of 435 GitHub repositories with at least 5,000 stars. It measures how honoring a repository's `.git-blame-ignore-revs` file changes `git blame` attribution and line-based ownership measures.
+The study uses a census of 435 GitHub repositories with at least 5,000 stars. It measures how honoring a repository's `.git-blame-ignore-revs` file changes `git blame` attribution and line-based ownership measures (RQ1 to RQ4). Version 2.0.0 adds the folder `detector/`: a detector that is trained on the project declarations and recommends which commits blame should ignore, evaluated on held-out repositories (RQ5 and RQ6) and applied to 150 popular repositories that declare nothing (RQ7).
 
 ## Contents
 
@@ -25,6 +25,21 @@ The study uses a census of 435 GitHub repositories with at least 5,000 stars. It
 | `data/category_*.json` | The development and validation samples of the commit-category rule. |
 | `rater/` | The blinded rating items, the answer key, the rating form, and the independent rater's labels. |
 
+## Detector study (`detector/`)
+
+| Path | Content |
+|---|---|
+| `detector/protocol.md`, `detector/decisions.md` | The study protocol, written before the experiments, and every later decision, deviation, run note, and checkpoint. The final data stayed closed until the tag `analysis-freeze`. |
+| `detector/configs/detector.json` | Paths, seeds, split fraction, flag rate, number of folds, and bootstrap resamples. |
+| `detector/src/` | Commit features (`common.py`, `features.py`), the labeled and unlabeled pools and the repository split (`pools.py`), the size-matched unlabeled commits (`matched_pool.py`), model selection on development repositories (`develop_matched.py`), leakage checks (`leakage.py`), the blame lanes with the detected ignore list (`lanes.py`), the RQ7 sample (`rq7_frame.py`), the frozen analysis (`analyze.py`), and the macro file writer (`paper_numbers.py`). `develop.py` is the first design that decision D-005 replaced. |
+| `detector/results/<run>/` | One folder per recorded run. Each holds `run.json` (commit, command, times, exit status, input checksums) and `run.log`. |
+| `detector/results/analysis-final/` | Per-repository tables and `analysis.json` of the frozen analysis on the final repositories. |
+| `detector/results/numbers.json`, `detector/paper/numbers.tex` | The values that the article reports for RQ5 to RQ7. |
+
+The planned analyses are RQ5 (detection on 162 held-out repositories, primary measure size-matched PU-AUC), RQ6 (recovery and reassignment of the detected list against `-w` and `-w -M -C` on the same repositories), and the two ablations. RQ7 is descriptive. Every other analysis is exploratory.
+
+To rebuild the RQ5 to RQ7 numbers from the deposited result files, run `make numbers` in `detector/` (minutes; needs only the files in this package). `make reproduce` reruns the blame lanes of the final evaluation. It needs the clones of the 162 final and 150 RQ7 repositories (about 140 GB) and takes several hours.
+
 ## Privacy
 
 Developer identities are normalized with each repository's `.mailmap` and replaced by SHA-256 hashes computed together with the repository name, and file paths are stored as hashes. Commit hashes and commit subject lines of the public repositories are kept, because they identify the declared commits.
@@ -36,7 +51,7 @@ Developer identities are normalized with each repository's `.mailmap` and replac
 
 ## Reproduce the results
 
-To recompute every number, table, and figure from the stored measurements, run:
+For RQ1 to RQ4, to recompute every number, table, and figure from the stored measurements, run:
 
 ```
 ./run_all.sh
@@ -47,5 +62,7 @@ The run takes a few minutes and writes `output/numbers.tex`, `output/tables/`, a
 To rebuild the frame and re-run every measurement as well, run `./run_all.sh --measure`. This clones all repositories and takes days. GitHub repositories change over time, so a new run measures newer revisions than the stored records, which were collected on 1 October 2026.
 
 ## License
+
+The package supports derived replay: it regenerates every number, table, and figure from the deposited measurement records. The measurement scripts are included for end-to-end reruns, but repositories change over time.
 
 Code: MIT License (`LICENSE`). Data: Creative Commons Attribution 4.0 International (`LICENSE-DATA`).

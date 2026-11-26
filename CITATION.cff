@@ -1,14 +1,14 @@
 cff-version: 1.2.0
 message: "If you use this replication package, please cite it as below."
-title: "Replication package: When Projects Declare What Blame Should Ignore"
+title: "Replication package: project-declared and learned blame ignore lists and line-based ownership"
 type: dataset
 authors:
   - family-names: "Yılmaz"
     given-names: "Emre Can"
     affiliation: "Samsun Vocational School, Ondokuz Mayıs University"
     orcid: "https://orcid.org/0000-0003-4365-9131"
-version: "1.0.0"
-date-released: "2026-10-03"
+version: "2.0.0"
+date-released: "2026-11-26"
 license: MIT
 keywords:
   - git blame
